@@ -31,8 +31,3 @@ body,
 *::-webkit-scrollbar-thumb:hover {
   background: var(--line-strong);
 }
-
-.mono {
-  font-family: 'Roboto Mono', 'IBM Plex Mono', var(--font-mono);
-  font-variant-numeric: tabular-nums;
-}

@@ -19,3 +19,15 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+/* ── P14: Mono font utility ─────────────────────────────────────── */
+.mono {
+  font-family: 'Roboto Mono', 'IBM Plex Mono', var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── P15: Market direction colors ───────────────────────────────── */
+.up  { color: var(--green); }
+.dn  { color: var(--red); }
+.up-bg { background: rgba(52, 160, 106, 0.08); }
+.dn-bg { background: rgba(208, 90, 85, 0.08); }
