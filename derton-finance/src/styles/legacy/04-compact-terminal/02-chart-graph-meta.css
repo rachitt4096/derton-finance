@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -81,7 +81,7 @@
 .gm-dot {
   width: 6px;
   height: 6px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   background: var(--accent2);
   box-shadow: 0 0 6px rgba(66, 151, 255, 0.6);
 }
@@ -108,7 +108,7 @@
 
 .gm-item-label {
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 8px;
   line-height: 1.2;
   letter-spacing: 0.07em;
@@ -117,7 +117,7 @@
 
 .gm-item-value {
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: clamp(14px, 1.1vw, 18px);
   font-weight: 700;
   line-height: 1.15;
@@ -157,19 +157,19 @@
   background: var(--bg2);
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1919px) {
   .graph-meta-grid-flat .gm-stack {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1365px) {
   .graph-meta-grid-flat .gm-stack {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
   .graph-meta-grid-flat .gm-stack {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -191,7 +191,7 @@
 }
 
 .sh-sym {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
   font-size: 32px;
   line-height: 1;
 }
@@ -316,7 +316,7 @@
 .chart-hint {
   font-size: 11px;
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   letter-spacing: 0.5px;
 }
 
@@ -433,7 +433,7 @@
   min-height: 100%;
   width: 100%;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
   background:
     radial-gradient(circle at top left, rgba(66, 151, 255, 0.12), transparent 36%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
@@ -454,7 +454,7 @@
 .loading-panel-orb {
   width: 14px;
   height: 14px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   box-shadow: 0 0 0 6px rgba(66, 151, 255, 0.12);
   animation: loading-pulse 1.4s ease-in-out infinite;
@@ -498,7 +498,7 @@
   bottom: 0;
   left: 0;
   width: 3.85%;
-  z-index: 2;
+  z-index: var(--z-chart-annotation);
   pointer-events: none;
   border-right: 1px dashed rgba(255, 179, 0, 0.38);
   background: linear-gradient(180deg, rgba(255, 179, 0, 0.12), rgba(255, 179, 0, 0.04));
@@ -511,12 +511,12 @@
   margin-top: 8px;
   padding: 3px 8px;
   border: 1px solid rgba(255, 179, 0, 0.2);
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   background: rgba(6, 16, 24, 0.72);
   font-size: 8px;
   letter-spacing: 0.14em;
   color: rgba(255, 226, 150, 0.92);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 body[data-theme='dark'] .opening-zone-overlay span {
@@ -526,7 +526,7 @@ body[data-theme='dark'] .opening-zone-overlay span {
 .chart-empty-state {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: var(--z-raised);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -553,11 +553,11 @@ body[data-theme='dark'] .opening-zone-overlay span {
   position: absolute;
   top: 14px;
   left: 14px;
-  z-index: 6;
+  z-index: var(--z-chart-legend);
   min-width: 392px;
   max-width: calc(100% - 188px);
   border: 1px solid var(--border2);
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
   background: linear-gradient(180deg, var(--panel), var(--card));
   box-shadow: var(--panel-shadow);
   padding: 14px 16px;
@@ -570,7 +570,7 @@ body[data-theme='dark'] .opening-zone-overlay span {
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .chart-legend-sym {
@@ -600,7 +600,7 @@ body[data-theme='dark'] .opening-zone-overlay span {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .chart-legend-item span {
@@ -623,9 +623,9 @@ canvas {
 
 .tooltip {
   position: absolute;
-  z-index: 10;
+  z-index: var(--z-chart-tooltip);
   min-width: 196px;
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   padding: 12px 14px;
   border: 1px solid var(--border2);
   background: linear-gradient(180deg, var(--panel), var(--card));

@@ -43,11 +43,6 @@
 #indexbar::-webkit-scrollbar { height: 4px; }
 #indexbar::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
 
-@media (min-width: 1600px) {
-  #indexbar { min-height: 38px !important; height: 38px !important; }
-}
-
-
 /* ── 3. Screens region — single flexing container ─────────────────── */
 
 #screens {
@@ -224,13 +219,13 @@
 
 .native-chart-tooltip {
   position: absolute;
-  z-index: 14;
+  z-index: var(--z-native-tooltip);
   display: grid;
   gap: 3px;
   min-width: 128px;
   padding: 8px 10px;
   border: 1px solid rgba(124, 148, 184, 0.28);
-  border-radius: 6px;
+  border-radius: var(--rd-md);
   background: rgba(9, 13, 22, 0.94);
   color: var(--text2);
   font-family: var(--font-mono);
@@ -247,15 +242,20 @@
 .chart-wrap > * { max-width: 100%; }
 
 /* Mid-laptop fallback: drop the right rail under 1180px to keep chart usable */
-@media (max-width: 1120px) {
+@media (max-width: 1365px) {
   .s1-body {
     grid-template-columns: clamp(200px, 20vw, 240px) minmax(0, 1fr);
   }
   .right-col-stack { display: none; }
+
+  .term-body {
+    grid-template-columns: clamp(200px, 20vw, 240px) minmax(0, 1fr);
+  }
+  .term-body > :nth-child(3) { display: none; }
 }
 
 /* Narrow: drop watchlist too (rare on trading desks) */
-@media (max-width: 800px) {
+@media (max-width: 899px) {
   .s1-body { grid-template-columns: minmax(0, 1fr); }
   .wl-sidebar { display: none; }
 }
@@ -301,7 +301,7 @@
   scrollbar-width: thin;
 }
 [class*="table-wrap"]::-webkit-scrollbar { height: 6px; }
-[class*="table-wrap"]::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+[class*="table-wrap"]::-webkit-scrollbar-thumb { background: var(--border2); border-radius: var(--rd-sm); }
 
 .sc-table,
 .ow-table,
@@ -428,7 +428,7 @@ body[data-theme='dark'] b.dn {
    DENSITY  ·  1366×768 trading-laptop target
    ===================================================================== */
 
-@media (max-width: 1440px) {
+@media (max-width: 1919px) {
   .screen { font-size: 12.5px; }
 
   .wl-head, .ip-head, .ow-head, .sc-head { padding: 8px 10px; }
@@ -441,9 +441,7 @@ body[data-theme='dark'] b.dn {
 
   /* Tighten chip / button paddings on dense laptops */
   .wl-chip, .sc-chip, .ow-chip, .btn-sm { padding: 4px 8px; font-size: 11px; }
-}
 
-@media (max-width: 1366px) {
   #topbar { padding: 0 12px; gap: 10px; }
   .logo-name { font-size: 18px; }
   .nav { gap: 6px; padding: 3px 4px; }
@@ -457,6 +455,11 @@ body[data-theme='dark'] b.dn {
    ===================================================================== */
 
 @media (min-width: 1920px) {
+  #indexbar {
+    min-height: 38px !important;
+    height: 38px !important;
+  }
+
   .s1-body {
     grid-template-columns:
       clamp(240px, 16vw, 320px)
@@ -491,13 +494,6 @@ body[data-theme='dark'] b.dn {
   height: 100%;
 }
 .term-body > * { min-width: 0; min-height: 0; overflow: hidden; }
-
-@media (max-width: 1180px) {
-  .term-body {
-    grid-template-columns: clamp(200px, 20vw, 240px) minmax(0, 1fr);
-  }
-  .term-body > :nth-child(3) { display: none; }
-}
 
 .term-row    { display: flex; gap: 8px; min-width: 0; min-height: 0; }
 .term-row > * { min-width: 0; }

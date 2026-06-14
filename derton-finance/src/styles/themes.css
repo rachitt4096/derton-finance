@@ -10,18 +10,25 @@
   --z-raised: 1;
   --z-sticky: 5;
   --z-dropdown: 40;
-  --z-overlay: 80;
   --z-modal: 90;
-  --z-toast: 100;
   --z-fullscreen: 200;
-
-  --radius: 3px;
+  --z-table-head: 2;
+  --z-chart-legend: 6;
+  --z-chart-annotation: 2;
+  --z-chart-tooltip: 10;
+  --z-native-tooltip: 14;
+  --z-topbar: 20;
+  --z-toast-notify: 400;
+  --z-overlay-veil: 500;
 
   /* Spacing Scale */
   --sp-0: 0px;
   --sp-1: 4px;
+  --sp-1p5: 6px;
   --sp-2: 8px;
+  --sp-2p5: 10px;
   --sp-3: 12px;
+  --sp-3p5: 14px;
   --sp-4: 16px;
   --sp-5: 20px;
   --sp-6: 24px;
@@ -94,8 +101,6 @@ body[data-theme='dark'] {
   --line-soft: #1a1e25;
   --line-strong: #232934;
   --panel-shadow: none;
-  --panel-inset: none;
-  --shadow: none;
 }
 
 body[data-theme='light'] {
@@ -141,51 +146,4 @@ body[data-theme='light'] {
   --line-soft: rgba(88, 117, 162, 0.18);
   --line-strong: rgba(76, 113, 172, 0.28);
   --panel-shadow: 0 20px 48px rgba(35, 58, 90, 0.1);
-  --panel-inset: inset 0 1px 0 rgba(255, 255, 255, 0.85);
-}
-
-body[data-theme='warm'] {
-  --bg0: #140d08;
-  --bg1: #1d140d;
-  --bg2: #271a10;
-  --bg3: #341f10;
-  --panel: #1b120b;
-  --card: #24180f;
-  --border: #4c3017;
-  --border2: #7a4d21;
-
-  --accent: #ffb050;
-  --accent2: #ff8a3d;
-  --ag: rgba(255, 176, 80, 0.14);
-
-  --green: #98d86a;
-  --green-soft: rgba(152, 216, 106, 0.14);
-  --green-bord: rgba(152, 216, 106, 0.34);
-  --green-glow: rgba(152, 216, 106, 0.38);
-  --gg: rgba(152, 216, 106, 0.14);
-
-  --red: #ff7d62;
-  --red-soft: rgba(255, 125, 98, 0.14);
-  --red-bord: rgba(255, 125, 98, 0.34);
-  --red-glow: rgba(255, 125, 98, 0.38);
-  --rg: rgba(255, 125, 98, 0.14);
-
-  --gold: #ffd27a;
-  --gold2: rgba(255, 210, 122, 0.14);
-  --orange: #ff974d;
-  --og: rgba(255, 151, 77, 0.14);
-  --purple: #f0b67c;
-  --pg: rgba(240, 182, 124, 0.12);
-
-  --text: #fff0dc;
-  --text2: #e7ccaa;
-  --text3: #a98a63;
-
-  --surface-1: rgba(28, 18, 11, 0.92);
-  --surface-2: rgba(38, 25, 14, 0.94);
-  --surface-3: rgba(51, 31, 15, 0.96);
-  --line-soft: rgba(177, 121, 61, 0.2);
-  --line-strong: rgba(221, 157, 86, 0.32);
-  --panel-shadow: 0 22px 54px rgba(0, 0, 0, 0.26);
-  --panel-inset: inset 0 1px 0 rgba(255, 236, 204, 0.08);
 }

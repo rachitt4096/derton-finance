@@ -1,5 +1,5 @@
 
-@media (max-width: 1200px) {
+@media (max-width: 1365px) {
   #topbar {
     width: calc(100% - 20px);
     margin: 12px auto 8px;
@@ -21,13 +21,11 @@
   .info-panel.info-panel-market {
     width: 328px;
   }
-}
 
-@media (max-width: 980px) {
   #topbar,
   #indexbar {
     width: calc(100% - 20px);
-    border-radius: 20px;
+    border-radius: var(--rd-2xl);
   }
 
   .logo {
@@ -51,9 +49,128 @@
   .fw-side {
     width: auto !important;
   }
+
+  #topbar,
+  #indexbar {
+    width: calc(100% - 12px);
+  }
+
+  #topbar {
+    margin: 6px auto 4px;
+  }
+
+  #screens {
+    padding: 0 6px 10px;
+  }
+
+  .info-panel.info-panel-market {
+    width: 292px;
+  }
+
+  #topbar,
+  #indexbar {
+    border-radius: 16px;
+  }
+
+  #topbar {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    flex: 1 1 100%;
+  }
+
+  .topbar-right {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+  }
+
+  #indexbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  #screens .screen {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .screen-col {
+    overflow: visible;
+  }
+
+  .info-panel.info-panel-market,
+  .sc-sidebar,
+  .port-side,
+  .fw-side {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+
+  .ow-hero {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .ow-status {
+    justify-self: start;
+  }
+
+  .logo,
+  .nav,
+  .topbar-right,
+  .wl-sidebar,
+  .chart-area,
+  .info-panel.info-panel-market,
+  .sc-table-wrap,
+  .sc-sidebar,
+  .port-main,
+  .port-side,
+  .fw-table-wrap,
+  .fw-side {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+
+  .s1-body,
+  .sc-body,
+  .port-body,
+  .fw-body {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: visible;
+  }
+
+  .topbar-right {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  .chart-area,
+  .sc-table-wrap,
+  .port-main,
+  .fw-table-wrap {
+    flex-basis: 100%;
+  }
+
+  .chart-ctrl-actions {
+    justify-content: flex-start;
+  }
+
+  .graph-btns {
+    margin-left: 0;
+  }
+
+  .ow-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .ow-countdown,
+  .ow-status {
+    justify-self: start;
+  }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 899px) {
   #topbar,
   #indexbar {
     width: calc(100% - 12px);
@@ -86,6 +203,35 @@
     width: auto;
     bottom: 8px;
   }
+
+  #topbar,
+  #indexbar {
+    width: calc(100% - 6px);
+    padding-inline: 8px;
+    border-radius: var(--rd-xl);
+  }
+
+  #screens {
+    padding: 0 3px 8px;
+  }
+
+  .nav-btn {
+    min-height: 36px;
+    padding: 6px 9px;
+  }
+
+  #indexbar,
+  .port-top,
+  .sc-summary,
+  .fw-summary-bar,
+  .s2-stats,
+  .s2-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-hint {
+    white-space: normal;
+  }
 }
 
 /* Compact viewport-fit pass */
@@ -96,7 +242,7 @@
   margin: 8px auto 6px;
   padding: 0 16px;
   gap: 14px;
-  border-radius: 20px;
+  border-radius: var(--rd-2xl);
 }
 
 .logo {
@@ -174,7 +320,7 @@
 .th-btn {
   min-height: 30px;
   padding-inline: 10px;
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
 }
 
 #indexbar {
@@ -183,13 +329,13 @@
   margin: 0 auto 6px;
   padding: 4px 8px;
   gap: 6px;
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
 }
 
 .idx {
   gap: 10px;
   padding: 8px 10px;
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
 }
 
 .idx-v {
@@ -227,7 +373,7 @@
   min-height: 36px;
   padding-inline: 12px;
   gap: 12px;
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
 }
 
 :is(
@@ -259,7 +405,7 @@
   .book-header,
   .book-table-wrap
 ) {
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   box-shadow: none;
 }
 
@@ -292,7 +438,7 @@
 
 .wl-item {
   padding: 7px 9px;
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
 }
 
 .stock-hdr {
@@ -332,7 +478,7 @@
 .s2-ctrl,
 .ind-panel {
   padding: 8px 12px;
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
 }
 
 .tf-btn,
@@ -343,7 +489,7 @@
 .ind-toggle {
   min-height: 32px;
   padding-inline: 10px;
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   font-size: 10px;
 }
 
@@ -511,7 +657,7 @@
 .toast {
   gap: 10px;
   padding: 11px 12px;
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
 }
 
 .toast-icon {
@@ -526,52 +672,8 @@
   line-height: 1.35;
 }
 
-@media (max-width: 1200px) {
-  #topbar,
-  #indexbar {
-    width: calc(100% - 12px);
-  }
 
-  #topbar {
-    margin: 6px auto 4px;
-  }
-
-  #screens {
-    padding: 0 6px 10px;
-  }
-
-  .info-panel.info-panel-market {
-    width: 292px;
-  }
-}
-
-@media (max-width: 980px) {
-  #topbar,
-  #indexbar {
-    width: calc(100% - 12px);
-    border-radius: 16px;
-  }
-}
-
-@media (max-width: 760px) {
-  #topbar,
-  #indexbar {
-    width: calc(100% - 6px);
-    padding-inline: 8px;
-    border-radius: 14px;
-  }
-
-  #screens {
-    padding: 0 3px 8px;
-  }
-
-  .nav-btn {
-    min-height: 36px;
-    padding: 6px 9px;
-  }
-}
-
-@media (min-width: 1500px) {
+@media (min-width: 1366px) {
   #topbar,
   #indexbar {
     width: min(1760px, calc(100% - 12px));
@@ -770,122 +872,6 @@
   white-space: nowrap;
 }
 
-@media (max-width: 1240px) {
-  #topbar {
-    flex-wrap: wrap;
-  }
-
-  .nav {
-    flex: 1 1 100%;
-  }
-
-  .topbar-right {
-    flex: 1 1 100%;
-    justify-content: flex-end;
-  }
-
-  #indexbar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-
-  #screens .screen {
-    height: auto;
-    min-height: 100%;
-  }
-
-  .screen-col {
-    overflow: visible;
-  }
-
-}
-
-@media (max-width: 1120px) {
-  .info-panel.info-panel-market,
-  .sc-sidebar,
-  .port-side,
-  .fw-side {
-    flex-basis: 100%;
-    min-width: 0;
-  }
-
-  .ow-hero {
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .ow-status {
-    justify-self: start;
-  }
-  .logo,
-  .nav,
-  .topbar-right,
-  .wl-sidebar,
-  .chart-area,
-  .info-panel.info-panel-market,
-  .sc-table-wrap,
-  .sc-sidebar,
-  .port-main,
-  .port-side,
-  .fw-table-wrap,
-  .fw-side {
-    flex-basis: 100%;
-    min-width: 0;
-  }
-
-  .s1-body,
-  .sc-body,
-  .port-body,
-  .fw-body {
-    flex-wrap: wrap;
-    align-content: flex-start;
-    overflow: visible;
-  }
-
-  .topbar-right {
-    margin-left: 0;
-    justify-content: flex-start;
-  }
-
-  .chart-area,
-  .sc-table-wrap,
-  .port-main,
-  .fw-table-wrap {
-    flex-basis: 100%;
-  }
-
-  .chart-ctrl-actions {
-    justify-content: flex-start;
-  }
-
-  .graph-btns {
-    margin-left: 0;
-  }
-
-  .ow-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .ow-countdown,
-  .ow-status {
-    justify-self: start;
-  }
-}
-
-@media (max-width: 760px) {
-  #indexbar,
-  .port-top,
-  .sc-summary,
-  .fw-summary-bar,
-  .s2-stats,
-  .s2-bottom {
-    grid-template-columns: 1fr;
-  }
-
-  .chart-hint {
-    white-space: normal;
-  }
-}
-
 @media (max-height: 980px) {
   #topbar {
     min-height: 56px;
@@ -1059,7 +1045,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1920px) {
   #topbar {
     min-height: 60px;
     height: 60px;

@@ -14,7 +14,7 @@
 
 .admin-title {
   color: #f6fbff;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
   font-size: 36px;
   letter-spacing: 0.08em;
 }
@@ -24,7 +24,7 @@
 .admin-card-sub,
 .admin-user-cell span {
   color: #9eb1c7;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -32,10 +32,10 @@
 .admin-action-btn,
 .admin-submit-btn {
   border: 1px solid rgba(72, 168, 255, 0.26);
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   background: linear-gradient(180deg, rgba(21, 31, 45, 0.96), rgba(10, 16, 25, 0.96));
   color: #edf5ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -78,7 +78,7 @@
 
 .admin-card {
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
   padding: 14px 16px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
@@ -90,7 +90,7 @@
 .admin-mini-row span,
 .admin-status,
 .admin-table th {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   text-transform: uppercase;
 }
 
@@ -103,7 +103,7 @@
 .admin-card-value {
   margin-top: 8px;
   color: #f8fbff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
@@ -148,7 +148,7 @@
   min-width: 0;
   min-height: 0;
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0.01));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   overflow: hidden;
@@ -197,7 +197,7 @@
 .admin-table th {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: var(--z-table-head);
   background: rgba(9, 15, 24, 0.98);
   color: #97afca;
   font-size: 10px;
@@ -212,7 +212,7 @@
   padding: 10px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   color: #eef5ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   vertical-align: top;
 }
@@ -236,7 +236,7 @@
   align-items: center;
   min-height: 24px;
   padding: 0 9px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   border: 1px solid currentColor;
   font-size: 9px;
   font-weight: 700;
@@ -285,10 +285,10 @@
   width: 100%;
   min-height: 38px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   background: rgba(6, 11, 18, 0.94);
   color: #f7fbff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   padding: 0 12px;
 }
@@ -318,7 +318,7 @@
 .admin-field-note {
   margin-top: -2px;
   color: #7f96b1;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -356,7 +356,7 @@
 
 .admin-mini-row strong {
   color: #f4f8ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -364,14 +364,14 @@
 .admin-empty-state {
   margin: 14px;
   border: 1px solid rgba(255, 92, 128, 0.24);
-  border-radius: 14px;
+  border-radius: var(--rd-xl);
   background: rgba(255, 92, 128, 0.08);
   color: #ffdbe3;
 }
 
 .admin-error {
   padding: 12px 14px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -393,7 +393,7 @@
 
 .admin-empty-copy {
   color: #a5b7cf;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -406,7 +406,7 @@
   justify-content: space-between;
   padding: 4px 0;
   border-bottom: 1px solid var(--border);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
 }
 
@@ -432,7 +432,7 @@
 }
 
 .ow-h-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
   font-size: 32px;
   letter-spacing: 0.08em;
   color: #fff5cf;
@@ -442,7 +442,7 @@
   margin-top: 3px;
   font-size: 11px;
   color: #b8c4d6;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .ow-head-meta {
@@ -461,11 +461,11 @@
   padding: 8px 14px;
   font-size: 18px;
   font-weight: 700;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .ow-status {
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   border: 1px solid var(--green);
   background: var(--gg);
   color: var(--green);
@@ -474,7 +474,7 @@
   align-items: center;
   gap: 6px;
   font-size: 11px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .ow-status.upcoming {
@@ -518,7 +518,7 @@
 
 .ow-filter-label {
   color: #9dadc4;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.06em;
 }
@@ -528,11 +528,11 @@
   min-height: 40px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   background: rgba(7, 13, 20, 0.88);
   color: #f4f8ff;
   padding: 0 12px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -543,9 +543,9 @@
 .ow-clear-btn,
 .ow-download-btn {
   min-height: 40px;
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   padding: 0 14px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -577,7 +577,7 @@
   align-items: center;
   gap: 6px;
   color: #eaf1fb;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -591,7 +591,7 @@
   border-top: 0;
   background: rgba(255, 255, 255, 0.014);
   color: #adb9cb;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -614,7 +614,7 @@
 .ow-table th {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: var(--z-raised);
   background: linear-gradient(180deg, #2f2c80, #1d1c59);
   color: #f0f4ff;
   font-size: 10px;
@@ -643,7 +643,7 @@
 
 .ow-table .num {
   text-align: right;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .ow-symbol-cell {
@@ -663,11 +663,11 @@
 .ow-expand-btn {
   width: 22px;
   height: 22px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   border: 1px solid rgba(176, 82, 82, 0.45);
   background: #f3e4e4;
   color: #984848;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 14px;
   line-height: 1;
 }
@@ -781,7 +781,7 @@
 }
 
 .sev-badge {
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   padding: 2px 7px;
   font-size: 9px;
   font-weight: 700;
@@ -835,7 +835,7 @@
   margin-bottom: 3px;
   font-size: 9px;
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .heatmap {
@@ -847,7 +847,7 @@
 
 .hm-cell {
   aspect-ratio: 1;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   display: grid;
   place-items: center;
   font-size: 8px;
@@ -884,7 +884,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  z-index: 500;
+  z-index: var(--z-overlay-veil);
   display: none;
   align-items: center;
   justify-content: center;

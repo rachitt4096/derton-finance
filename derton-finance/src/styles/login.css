@@ -48,11 +48,11 @@
 }
 
 .lv2-root #bg {
-  z-index: 0;
+  z-index: var(--z-base);
 }
 
 .lv2-atm-grid {
-  z-index: 1;
+  z-index: var(--z-raised);
   background-image: linear-gradient(rgba(121, 198, 255, 0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(121, 198, 255, 0.025) 1px, transparent 1px);
   background-size: 58px 58px;
@@ -61,12 +61,12 @@
 }
 
 .lv2-atm-vignette {
-  z-index: 2;
+  z-index: var(--z-table-head);
   background: radial-gradient(circle at center, transparent 18%, rgba(2, 6, 13, 0.88) 100%);
 }
 
 .lv2-orb {
-  z-index: 3;
+  z-index: var(--z-chart-legend);
   filter: blur(28px);
 }
 
@@ -88,7 +88,7 @@
 
 .lv2-shell {
   position: relative;
-  z-index: 5;
+  z-index: var(--z-sticky);
   width: min(1080px, 100%);
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(380px, 0.85fr);
@@ -165,7 +165,7 @@
 
 .lv2-brand-sub {
   color: var(--dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -182,11 +182,11 @@
   align-items: center;
   width: fit-content;
   padding: 8px 14px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   background: rgba(94, 234, 168, 0.08);
   border: 1px solid rgba(94, 234, 168, 0.18);
   color: var(--green);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -220,11 +220,11 @@
   align-items: center;
   min-height: 38px;
   padding: 0 14px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   border: 1px solid rgba(121, 198, 255, 0.14);
   background: rgba(255, 255, 255, 0.02);
   color: rgba(237, 246, 255, 0.82);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -274,7 +274,7 @@
 
 .lv2-status-label {
   color: var(--dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -338,7 +338,7 @@
 
 .lv2-panel-kicker {
   color: var(--cyan);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -370,7 +370,7 @@
 
 .lv2-fl {
   color: var(--dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -426,7 +426,7 @@
   border: 0;
   background: transparent;
   color: var(--dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
   cursor: pointer;
@@ -508,7 +508,7 @@
 .lv2-btn-txt,
 .lv2-btn-load {
   position: relative;
-  z-index: 1;
+  z-index: var(--z-raised);
 }
 
 .lv2-btn-load {
@@ -540,7 +540,7 @@
 .lv2-panel-note {
   margin-top: 16px;
   color: var(--dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -549,7 +549,7 @@
 .lv2-sov {
   position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: var(--z-topbar);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -641,7 +641,7 @@
 .lv2-ssub {
   margin-top: 8px;
   color: var(--dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -680,7 +680,7 @@
 .lv2-srl {
   margin-top: 2px;
   color: var(--green);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.12em;
 }
@@ -690,7 +690,7 @@
   height: 3px;
   margin-top: 20px;
   overflow: hidden;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   background: rgba(94, 234, 168, 0.1);
 }
 
@@ -703,7 +703,7 @@
   animation: lv2-progFill 0.9s 0.15s ease forwards;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1365px) {
   .lv2-root {
     padding: 20px;
   }
@@ -722,7 +722,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 639px) {
   .lv2-root {
     padding: 14px;
   }

@@ -7,7 +7,6 @@ import TopNav from './TopNav'
 const THEME_OPTIONS = [
   { value: 'dark', label: 'Dark' },
   { value: 'light', label: 'Light' },
-  { value: 'warm', label: 'Warm' },
 ]
 
 const STALE_FEED_BADGE_MS = 15_000

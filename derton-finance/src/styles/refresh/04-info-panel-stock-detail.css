@@ -1,7 +1,7 @@
 
 .info-panel.info-panel-market {
   width: 364px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--bg1);
 }
 
@@ -21,7 +21,7 @@
 .info-panel-market .qs-item,
 .info-panel-market .ow-card,
 .info-panel-market .fin-c {
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   border-color: var(--border);
   background: var(--bg2);
 }
@@ -67,7 +67,7 @@
 
 .s2-chg {
   margin-top: 6px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .s2-stats {
@@ -75,14 +75,14 @@
 }
 
 .s2-stat {
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--bg2);
   box-shadow: none;
 }
 
 .s2-sl {
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -145,7 +145,7 @@
 .perf-row span:first-child,
 .ow-detail-label {
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -161,7 +161,7 @@
 .insight-book-head {
   padding-bottom: 8px;
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.08em;
 }
@@ -169,7 +169,7 @@
 .insight-book-row {
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .insight-book-row:last-child {

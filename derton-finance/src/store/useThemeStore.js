@@ -2,7 +2,7 @@ import { create } from 'zustand'
 
 const THEME_KEY = 'derton-theme-v3'
 const DEFAULT_THEME = 'dark'
-const ALLOWED_THEMES = new Set(['dark', 'light', 'warm'])
+const ALLOWED_THEMES = new Set(['dark', 'light'])
 
 const getInitialTheme = () => {
   if (typeof window === 'undefined') {

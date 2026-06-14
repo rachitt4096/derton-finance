@@ -41,7 +41,7 @@
 
 .cal-d {
   border: 0;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   text-align: center;
   font-size: 10px;
@@ -68,7 +68,7 @@
 .cal-close,
 .em-cancel {
   width: 100%;
-  border-radius: 6px;
+  border-radius: var(--rd-md);
   padding: 8px;
   margin-top: 12px;
 }
@@ -149,7 +149,7 @@
 .em-opt {
   width: 100%;
   border: 1px solid var(--border2);
-  border-radius: 6px;
+  border-radius: var(--rd-md);
   background: transparent;
   color: var(--text);
   padding: 9px 12px;
@@ -192,7 +192,7 @@
   position: fixed;
   top: 58px;
   right: 12px;
-  z-index: 400;
+  z-index: var(--z-toast-notify);
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -201,7 +201,7 @@
 
 .toast {
   max-width: 340px;
-  border-radius: 10px;
+  border-radius: var(--rd-lg);
   padding: 10px 12px;
   display: flex;
   align-items: center;

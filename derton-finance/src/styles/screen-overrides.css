@@ -122,7 +122,7 @@ body[data-theme='dark'] .chart-legend {
   margin-top: 0;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1365px) {
   #s2 .s2-headline-row {
     flex-wrap: wrap;
     align-items: flex-start;
@@ -142,7 +142,7 @@ body[data-theme='dark'] .chart-legend {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 899px) {
   #s2 .s2-headline-row {
     gap: 10px;
   }
@@ -242,7 +242,7 @@ body[data-theme='dark'] .chart-legend {
 #s5 .ow-expand-btn {
   border-color: rgba(125, 158, 227, 0.28);
   background: var(--bg2);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   color: var(--text2);
   transition:
     transform 0.18s ease,
@@ -274,7 +274,7 @@ body[data-theme='dark'] .chart-legend {
 
 #s5 .ow-detail-grid > div {
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   padding: 10px 12px;
   background: var(--screen-card-bg);
   box-shadow: var(--screen-inset);

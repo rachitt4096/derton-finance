@@ -12,7 +12,7 @@
 
 .topbar-command strong {
   color: var(--text2);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -66,7 +66,7 @@
   border: 0;
   background: transparent;
   color: #9aa9c2;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -120,7 +120,7 @@
   border: 1px solid var(--border);
   background: var(--surface-1);
   color: #dff7ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
 }
 
@@ -153,7 +153,7 @@
 .rail-symbol-card strong {
   margin: 6px 0 3px;
   color: #f4f8ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 17px;
 }
 
@@ -166,7 +166,7 @@
 .rail-group-title {
   padding: 5px 4px;
   color: #6f7f99;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -178,7 +178,7 @@
   justify-content: space-between;
   min-height: 34px;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #b6c5dc;
   padding: 0 9px;
@@ -247,7 +247,7 @@
 
 .ix-eyebrow {
   color: var(--accent);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -284,7 +284,7 @@
 
 .ix-panel-meta {
   color: #99abc8;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -315,7 +315,7 @@
   display: block;
   margin-top: 8px;
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 18px;
 }
 
@@ -349,10 +349,10 @@
   min-height: 22px;
   padding: 0 8px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   color: #c9d6ec;
   background: transparent;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -395,7 +395,7 @@
 .ix-setting-row select {
   min-height: 38px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #eff5ff;
   padding: 0 10px;
@@ -432,7 +432,7 @@
 .ix-index-value {
   margin-top: 8px;
   color: #f8fbff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: clamp(28px, 5vw, 46px);
   font-weight: 700;
   line-height: 1;
@@ -466,7 +466,7 @@
   position: relative;
   height: 10px;
   margin: 10px 0 8px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
 }
 
@@ -491,7 +491,7 @@
 .ix-return-card {
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   text-align: center;
 }
@@ -528,7 +528,7 @@
 .ix-segment button,
 .ix-mini-btn {
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #b9c8df;
   padding: 7px 10px;
@@ -563,7 +563,7 @@
 .ix-table th {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: var(--z-raised);
   padding: 10px 9px;
   border-bottom: 1px solid var(--border);
   background: #352975;
@@ -582,7 +582,7 @@
   padding: 9px;
   border-bottom: 1px solid var(--line-soft);
   color: #d8e2f1;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
   text-align: right;
   white-space: nowrap;
@@ -612,7 +612,7 @@
 .ix-heat-cell {
   min-height: 60px;
   padding: 8px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   color: #05110d;
   background: rgba(35, 214, 134, calc(0.2 + var(--strength) * 0.65));
 }
@@ -641,7 +641,7 @@
 .ix-confidence-track {
   overflow: hidden;
   height: 7px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
 }
 
@@ -767,7 +767,7 @@
 .ix-command-list button,
 .port-entry-submit {
   border: 1px solid var(--accent);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #eff8ff;
   padding: 0 16px;
@@ -852,7 +852,7 @@
 
 .ix-model-pill span {
   color: var(--accent);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .ix-event {
@@ -876,7 +876,7 @@
   font-size: 12px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1365px) {
   .ix-market-hero,
   .ix-market-grid,
   .ix-arb-layout,
@@ -890,7 +890,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 899px) {
   #topbar {
     min-height: auto;
   }
@@ -972,6 +972,37 @@
   .ix-message {
     max-width: 100%;
   }
+
+  .assistant-panel {
+    right: 12px;
+    left: 12px;
+    width: auto;
+    bottom: 80px;
+  }
+
+  .terminal-left-nav.rail-icononly {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4px;
+    padding: 6px 8px;
+    overflow-x: auto;
+  }
+
+  .rail-icon-brand {
+    margin: 0 6px 0 0;
+    flex: 0 0 auto;
+  }
+
+  .rail-icon-nav {
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+  }
+
+  /* On mobile the flyout tooltips would clip — rely on native title instead */
+  .rail-icon-tip {
+    display: none;
+  }
 }
 
 /* ============ Option Chain workspace ============ */
@@ -987,17 +1018,17 @@
   gap: 2px;
   padding: 3px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
 }
 
 .opt-pill {
   padding: 6px 12px;
   border: 0;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #9aa9c2;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -1016,10 +1047,10 @@
 .opt-expiry-select {
   padding: 7px 12px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #e7f0ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
   cursor: pointer;
 }
@@ -1038,14 +1069,14 @@
 .opt-chain-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11.5px;
 }
 
 .opt-chain-table thead {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: var(--z-table-head);
 }
 
 .opt-side-head th {
@@ -1170,10 +1201,10 @@
   height: 38px;
   margin: 12px 0 6px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #dff7ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 13px;
 }
@@ -1194,7 +1225,7 @@
   width: 42px;
   height: 42px;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #93a2bd;
   cursor: pointer;
@@ -1225,10 +1256,10 @@
   transform: translateY(-50%) translateX(-4px);
   padding: 5px 10px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #e7f0ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   white-space: nowrap;
   letter-spacing: 0.02em;
@@ -1236,7 +1267,7 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.14s ease, transform 0.14s ease;
-  z-index: 40;
+  z-index: var(--z-dropdown);
 }
 
 .rail-icon-tip::before {
@@ -1258,32 +1289,6 @@
   transform: translateY(-50%) translateX(0);
 }
 
-@media (max-width: 760px) {
-  .terminal-left-nav.rail-icononly {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 4px;
-    padding: 6px 8px;
-    overflow-x: auto;
-  }
-
-  .rail-icon-brand {
-    margin: 0 6px 0 0;
-    flex: 0 0 auto;
-  }
-
-  .rail-icon-nav {
-    flex-direction: row;
-    width: auto;
-    padding: 0;
-  }
-
-  /* On mobile the flyout tooltips would clip — rely on native title instead */
-  .rail-icon-tip {
-    display: none;
-  }
-}
-
 /* ============ History / Date Explorer ============ */
 .hist-controls {
   display: flex;
@@ -1296,10 +1301,10 @@
 .hist-date-input {
   padding: 7px 11px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #e7f0ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -1324,7 +1329,7 @@
   gap: 2px;
   padding: 3px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
 }
 
@@ -1357,7 +1362,7 @@
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 90;
+  z-index: var(--z-modal);
   display: grid;
   place-items: center;
   width: 54px;
@@ -1382,13 +1387,13 @@
   position: fixed;
   right: 22px;
   bottom: 86px;
-  z-index: 90;
+  z-index: var(--z-modal);
   display: flex;
   flex-direction: column;
   width: min(400px, calc(100vw - 36px));
   height: min(560px, calc(100vh - 130px));
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   overflow: hidden;
   background: var(--bg1);
   animation: assistant-pop 0.16s ease;
@@ -1420,7 +1425,7 @@
   display: block;
   margin-top: 2px;
   color: #80d7ff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -1463,7 +1468,7 @@
   text-align: left;
   padding: 9px 11px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #cdd9ef;
   font-size: 12.5px;
@@ -1480,7 +1485,7 @@
 .assistant-msg {
   max-width: 90%;
   padding: 9px 12px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   font-size: 13px;
   line-height: 1.5;
   white-space: pre-wrap;
@@ -1515,14 +1520,14 @@
 .assistant-tools {
   margin-top: 6px;
   color: #7f8da8;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
 }
 
 .assistant-disabled {
   padding: 12px;
   border: 1px solid var(--gold);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #ffd79a;
   font-size: 12.5px;
@@ -1531,7 +1536,7 @@
 
 .assistant-disabled code {
   color: #ffe9c2;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .assistant-input {
@@ -1545,7 +1550,7 @@
   flex: 1;
   padding: 9px 12px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #e7f0ff;
   font-size: 13px;
@@ -1559,7 +1564,7 @@
 .assistant-input button {
   padding: 0 16px;
   border: 1px solid var(--accent);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #eaf7ff;
   font-size: 12px;
@@ -1571,14 +1576,6 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 760px) {
-  .assistant-panel {
-    right: 12px;
-    left: 12px;
-    width: auto;
-    bottom: 80px;
-  }
-}
 
 /* ============ Alerts ============ */
 .alert-form {
@@ -1604,7 +1601,7 @@
 .alert-form input {
   padding: 9px 11px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #e7f0ff;
   font-size: 13px;
@@ -1620,7 +1617,7 @@
   margin-top: 4px;
   padding: 10px;
   border: 1px solid var(--accent);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #eaf7ff;
   font-size: 13px;
@@ -1664,7 +1661,7 @@
   height: 26px;
   padding: 0 7px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #cdd9ef;
   font-size: 11px;
@@ -1683,7 +1680,7 @@
   width: 28px;
   height: 26px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   color: #9aa9c2;
   cursor: pointer;
@@ -1700,7 +1697,7 @@
   place-items: center;
   width: 40px;
   border: 1px solid var(--accent);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: transparent;
   color: #80d7ff;
   cursor: pointer;
@@ -1729,7 +1726,7 @@
   text-align: left;
   padding: 12px 14px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--surface-1);
   cursor: pointer;
   transition: all 0.15s ease;
@@ -1760,20 +1757,20 @@
 
 .comm-card-head small {
   color: #7f8da8;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 9px;
 }
 
 .comm-card-price {
   margin-top: 8px;
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 19px;
 }
 
 .comm-card-chg {
   margin-top: 3px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -1790,7 +1787,7 @@
   width: 18px;
   height: 18px;
   cursor: nwse-resize;
-  z-index: 5;
+  z-index: var(--z-sticky);
 }
 
 /* ============ Dashboard AI Insight ============ */

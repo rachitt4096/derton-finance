@@ -20,13 +20,17 @@ login `ADMIN01` / `admin@2026`. The frontend proxies `/api` + `/ws` to the local
 it's same-origin (no CORS/cookie issues). No deploy needed to test.
 
 ## Frontend CSS
-Recently consolidated from ~15k lines / 7 files (with ~8 duplicate definitions per selector)
-down to ~5k lines with each selector defined once: `fonts → themes → base → legacy-terminal →
-v5-parity → login → refresh → compatibility → institutional-terminal → screen-overrides`,
-imported in that order by `derton-finance/src/index.css`. Foundations first, overrides last,
-screen-specific at the end. Keep it that way — one selector, one place.
-`derton-finance/public/mock-dashboard.html` is a standalone design concept (open at
-`/mock-dashboard.html`).
+Imported in order by `derton-finance/src/index.css`: `fonts → themes → base → legacy-terminal →
+v5-parity → login → refresh → compatibility → institutional-terminal → screen-overrides`.
+CSS metrics: **15,342 lines | 29 files | 50 !important | 38 @media blocks**.
+
+**Design tokens (Phase 2):** All `var(--ix-*)` references (150) replaced with canonical tokens
+(`--accent`, `--green`, `--red`, `--gold`, `--border`, `--surface-1`, `--text`, `--text2`,
+`--text3`, `--font-mono`, `--panel-shadow`). Zero alias variables remain.
+
+**Breakpoints (Phase 3):** 23 unique widths → 7 canonical values across 5 tiers:
+`<640px` (639) | `640–899px` (899) | `900–1365px` (900/1365) | `1366–1919px` (1366/1919) |
+`≥1920px` (1920). 52 @media blocks reduced to 38 (14 merged).
 
 ## Product direction (AI)
 The AI layer must be **descriptive, not predictive/advisory** (avoids SEBI advice rules and

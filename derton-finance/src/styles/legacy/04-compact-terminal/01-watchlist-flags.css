@@ -13,7 +13,7 @@
 
 .wl-title {
   color: #6ccfff;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -22,7 +22,7 @@
 .wl-add {
   width: 18px;
   height: 18px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   border: 1px solid rgba(0, 220, 255, 0.65);
   background: rgba(0, 168, 255, 0.14);
   color: #8be6ff;
@@ -58,10 +58,10 @@
   border: 1px solid rgba(0, 163, 255, 0.5);
   background: rgba(0, 127, 219, 0.15);
   color: #74d8ff;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   padding: 2px 8px;
   font-size: 8px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -137,12 +137,12 @@
 .wl-sym {
   color: #d3ecff;
   font-size: 25px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
   letter-spacing: 0.06em;
 }
 
 .wl-ltp {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 20px;
   font-weight: 700;
 }
@@ -150,14 +150,14 @@
 .wl-company {
   max-width: 120px;
   color: #4f6f8b;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 8px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
 }
 
 .wl-pct {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 700;
 }
@@ -172,7 +172,7 @@
   padding: 1px 4px;
   border: 1px solid var(--border2);
   border-radius: 2px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 7px;
   letter-spacing: 0.08em;
   line-height: 1.35;
@@ -213,7 +213,7 @@
   display: none;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 899px) {
   .wl-sidebar {
     width: 100%;
   }
@@ -290,7 +290,7 @@
 .cal-d,
 .cal-dh,
 .em-sub {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .wl-ltp {
@@ -318,7 +318,7 @@
 
 .wl-meta,
 .wl-change {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
 }
 
@@ -343,7 +343,7 @@
 .flag {
   display: inline-block;
   padding: 2px 6px;
-  border-radius: 999px;
+  border-radius: var(--rd-full);
   font-size: 8px;
   letter-spacing: 0.5px;
   border: 1px solid transparent;

@@ -19,7 +19,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.03);
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -80,14 +80,14 @@
   min-height: 54px;
   padding: 10px 14px;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--bg2);
 }
 
 .sc-sum-l,
 .pc-l {
   color: var(--text3);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -110,7 +110,7 @@
 
 .pc-c {
   margin-top: 8px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -126,7 +126,7 @@
 .ow-hero {
   min-height: 122px;
   padding: 22px;
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--bg1);
 }
 
@@ -138,13 +138,13 @@
 
 .ow-countdown {
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: var(--bg2);
 }
 
 .ow-status {
   border: 1px solid rgba(52, 160, 106, 0.25);
-  border-radius: 3px;
+  border-radius: var(--rd-sm);
   background: rgba(52, 160, 106, 0.1);
   color: var(--green);
 }
@@ -178,8 +178,8 @@
 .fw-count {
   min-height: 48px;
   padding: 0 16px;
-  border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace;
+  border-radius: var(--rd-sm);
+  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -190,8 +190,8 @@
   align-items: center;
   min-height: 26px;
   padding: 0 10px;
-  border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace;
+  border-radius: var(--rd-sm);
+  font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;

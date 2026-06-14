@@ -27,7 +27,7 @@ function Settings() {
           <div className="ix-setting-row">
             <span>Theme</span>
             <div className="ix-segment">
-              {['dark', 'light', 'warm'].map((item) => (
+              {['dark', 'light'].map((item) => (
                 <button type="button" key={item} className={theme === item ? 'on' : ''} onClick={() => setTheme(item)}>
                   {item}
                 </button>
