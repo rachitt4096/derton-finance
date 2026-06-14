@@ -81,16 +81,6 @@
     letter-spacing: 0.02em;
   }
 
-  #indexbar {
-    min-height: 42px;
-    height: 42px;
-    padding: 0;
-    gap: 0;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg1);
-    align-items: stretch;
-  }
-
   .idx {
     min-width: 160px;
     padding: 0 18px;

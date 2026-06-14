@@ -4,14 +4,6 @@ body,
   font-family: 'DM Sans', sans-serif;
 }
 
-#topbar {
-  height: 72px;
-  min-height: 72px;
-  padding: 0 22px;
-  gap: 18px;
-  background: linear-gradient(90deg, var(--bg0) 0%, var(--panel) 30%, var(--panel) 70%, var(--bg0) 100%);
-  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
-}
 
 .logo {
   gap: 10px;
@@ -125,11 +117,6 @@ body,
   padding: 5px 12px;
   border-radius: var(--rd-md);
   font-size: 11px;
-}
-
-#indexbar {
-  height: 40px;
-  background: var(--bg0);
 }
 
 .idx {
