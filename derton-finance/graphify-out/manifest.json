@@ -1,0 +1,262 @@
+{
+  "/home/rachit/DERTONFINS/derton-finance/eslint.config.js": {
+    "mtime": 1772712279.3512137,
+    "hash": "49c8473bcfcec3aef596a5fb04a6df06"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/postcss.config.js": {
+    "mtime": 1772732115.3946366,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/tailwind.config.js": {
+    "mtime": 1772732115.3946366,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/vite.config.js": {
+    "mtime": 1772732115.3946366,
+    "hash": "88439104b3c207f17d33ef3160e3b080"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/main.jsx": {
+    "mtime": 1772732115.3936367,
+    "hash": "e13723e2574429d9a6d849727e3ff695"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/App.jsx": {
+    "mtime": 1774585663.7087057,
+    "hash": "9b8b2f9dcd416570c90612e4f85b7455"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/StockDetail.jsx": {
+    "mtime": 1776956761.914457,
+    "hash": "d5efdea490d93b1d3ac0a130f08dc8c1"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/Screener.jsx": {
+    "mtime": 1776601798.6666496,
+    "hash": "976f01e9b1c8201452268237c5305219"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/FlagsWarnings.jsx": {
+    "mtime": 1776601878.4931738,
+    "hash": "0d82edd7ff49a23fc5bdda4952c25306"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/LoginPage.jsx": {
+    "mtime": 1776946930.4767263,
+    "hash": "04b0d57e5e65c700087cb4f9c9fff8c9"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/AdminTerminal.jsx": {
+    "mtime": 1776956524.9719408,
+    "hash": "5cc05d1b17d4874ef0f5701c9d768722"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/Portfolio.jsx": {
+    "mtime": 1776956354.9290638,
+    "hash": "5d95b6aff874c0c5d6c061ceabec3777"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/OpeningWindow.jsx": {
+    "mtime": 1776952890.9012477,
+    "hash": "3ce7bcd0286e6aac89cd007daac7055f"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/pages/Dashboard.jsx": {
+    "mtime": 1776935371.8820083,
+    "hash": "c665497e1f9de460d2dacfa47659f758"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/constants/chart.js": {
+    "mtime": 1774822365.990191,
+    "hash": "9940026a047a8ba1e0b58a9cbcdcdffe"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/store/useMarketStore.js": {
+    "mtime": 1776838745.1490278,
+    "hash": "bb67b8890c1372f8c05c64fc9d50128d"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/store/useThemeStore.js": {
+    "mtime": 1774547808.3289428,
+    "hash": "f8c46f06a09fc64baa242443250ae64b"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/hooks/useExport.js": {
+    "mtime": 1774464811.0199738,
+    "hash": "ec62f7be225eb298b594074b53fdfa0c"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/hooks/useCompanyInsights.js": {
+    "mtime": 1776849185.0108051,
+    "hash": "af001e3930bac51822ec888b9f7c4a64"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/hooks/useLivePrice.js": {
+    "mtime": 1776849422.7246704,
+    "hash": "15df20ef7380b9fc8a1e6a78d9223899"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/hooks/useChartData.js": {
+    "mtime": 1776948859.587292,
+    "hash": "355971516283cfefa1b9833ffdaa58aa"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/hooks/useChartData.test.js": {
+    "mtime": 1776942221.025019,
+    "hash": "f2070c884b39c6e6876e2f4c4b86cc95"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/app/TerminalApp.jsx": {
+    "mtime": 1776840439.4178224,
+    "hash": "abdbb71e7ec42f08447a0a1b9b198153"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/ui/LoadingPanel.jsx": {
+    "mtime": 1774464730.944803,
+    "hash": "5fd9996bd3045857ee8e2684b29087e0"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/ui/Modal.jsx": {
+    "mtime": 1772734288.5999627,
+    "hash": "45c0fb583c5638a074342e589c93796c"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/ui/Calendar.jsx": {
+    "mtime": 1776527972.139184,
+    "hash": "969386186a6894ea7d1ea1f9d3c4fb98"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/ui/Tooltip.jsx": {
+    "mtime": 1772740678.4278152,
+    "hash": "d15d2f0e9a90720703e37c5a20bf62cd"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/ui/Badge.jsx": {
+    "mtime": 1772734288.5959628,
+    "hash": "d7357902f656eeb1b5e88af11f693d49"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/ui/Toast.jsx": {
+    "mtime": 1775672248.8380842,
+    "hash": "8620ed97ca82eb1024251c10249a8c27"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/watchlist/WatchlistSearch.jsx": {
+    "mtime": 1774346914.72962,
+    "hash": "0a849ed0a865b892d7572881d0e1c52f"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/watchlist/WatchlistItem.jsx": {
+    "mtime": 1775543384.1493497,
+    "hash": "dc8b897763848172f3c2ba16f5006f72"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/CompanyInsightPanel.jsx": {
+    "mtime": 1776849150.6952171,
+    "hash": "6bb7fbc2cb9b816a2020cbf3affe67ae"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/MarketDepthTable.jsx": {
+    "mtime": 1776771304.7669451,
+    "hash": "3ea40ec5596378406c7bda6bcdc1994c"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/StockHeader.jsx": {
+    "mtime": 1776834631.2027357,
+    "hash": "e28738d3d51fda48885628ec176b445d"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/BandBar.jsx": {
+    "mtime": 1775543384.1493497,
+    "hash": "3fae8c2d53ffd2a7924ed05f9537fbb7"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/StockHistoryTable.jsx": {
+    "mtime": 1776835098.3884997,
+    "hash": "3d2cdc767fb9849a5bed83aac343952e"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/StockResearchGrid.jsx": {
+    "mtime": 1774673351.8944068,
+    "hash": "614ceb6138d882de158733d468d035e9"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/stock/TodayOhlcStrip.jsx": {
+    "mtime": 1776772614.1223881,
+    "hash": "1323c9c90ca8e1846ca2bbbdf077ca63"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/layout/TickerTape.jsx": {
+    "mtime": 1774643722.9653833,
+    "hash": "e6b047f3625d56bb0f98d0ad4cdd2ba7"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/layout/Topbar.jsx": {
+    "mtime": 1776946930.4767263,
+    "hash": "88b5250ee1b613df8f294b1f109f8438"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/layout/Sidebar.jsx": {
+    "mtime": 1772734369.8719363,
+    "hash": "4046527afbfd45c4e40a1e1548fcdb02"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/layout/IndexBar.jsx": {
+    "mtime": 1774643722.9653833,
+    "hash": "3b4f07c3d62f57877dd14198563234cc"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/panels/InfoPanel.jsx": {
+    "mtime": 1776944553.6874633,
+    "hash": "520352b8733c8896914be459ed1933c0"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/panels/GraphStatsPanel.jsx": {
+    "mtime": 1775538494.745331,
+    "hash": "ad5b47efa3ac5faa9db45f3b30b56058"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/chart/LazyMainChart.jsx": {
+    "mtime": 1774464736.9668655,
+    "hash": "03d0b5dbd67f7231d165adf81a534c8b"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/chart/MainChart.jsx": {
+    "mtime": 1776935362.079176,
+    "hash": "f99abcb937cc6de113dc9ca10c8769c9"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/components/chart/ChartControls.jsx": {
+    "mtime": 1776838752.756141,
+    "hash": "29f8dad3b45720690e471078df75b65d"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/marketPrice.test.js": {
+    "mtime": 1776951472.7996035,
+    "hash": "10a2462b6f6b80d18ff8289f78f9d085"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/priceApi.js": {
+    "mtime": 1774179425.0865536,
+    "hash": "37b7cc45f1ea7d9b462e4041a8c871f3"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/backend.js": {
+    "mtime": 1776935178.6356115,
+    "hash": "00f1f4d4d2ebc2427f56cc369c0f1a1e"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/formatters.js": {
+    "mtime": 1775130952.2405863,
+    "hash": "f44502f496f3e8c9d3fb9db95e855be3"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/marketSession.js": {
+    "mtime": 1776946930.4751947,
+    "hash": "165a1841139ec3df5e5fbde1103ef2a4"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/marketSession.test.js": {
+    "mtime": 1776946930.4767263,
+    "hash": "224b68486ba350af512031bece735c19"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/marketPrice.js": {
+    "mtime": 1776951472.7986033,
+    "hash": "23307f45d99abc3183f71abec052543d"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/chartHelpers.js": {
+    "mtime": 1774822391.6565244,
+    "hash": "cdd38d563fdebf41cbd6dad7e88c7d8a"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/terminalApi.js": {
+    "mtime": 1776956305.2030427,
+    "hash": "a281dab076df31286d7d2a1b11bf31fb"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/soundAlerts.js": {
+    "mtime": 1772790812.0838788,
+    "hash": "4383b9791690e4b32f14f3620c84f87a"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/companyInsightsApi.js": {
+    "mtime": 1775130963.3409503,
+    "hash": "1d423e6fb1e1511992bb04f78dd73bd8"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/watchlistApi.js": {
+    "mtime": 1774822625.674562,
+    "hash": "133323c2bfb8a0fc2e9b85d446ffd7c1"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/utils/exportHelpers.js": {
+    "mtime": 1774464824.0782268,
+    "hash": "2477649b6318ffe8eeb36799d7fce471"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/README.md": {
+    "mtime": 1776944553.6874633,
+    "hash": "c2e9b0bf1da2bbecce96255beb07b507"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/index.html": {
+    "mtime": 1772735181.1993227,
+    "hash": "7f27d29e45f34f204b9dd0e9587538b5"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/public/vite.svg": {
+    "mtime": 1772712279.3530521,
+    "hash": "8e3a10e157f75ada21ab742c022d5430"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/assets/react.svg": {
+    "mtime": 1772712279.3546896,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "/home/rachit/DERTONFINS/derton-finance/src/assets/logo.svg": {
+    "mtime": 1772732115.3936367,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  }
+}

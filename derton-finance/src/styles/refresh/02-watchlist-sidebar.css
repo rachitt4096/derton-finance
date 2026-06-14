@@ -1,0 +1,154 @@
+.wl-head {
+  padding: 12px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--bg2);
+}
+
+.wl-title {
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.wl-add {
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--text);
+}
+
+.wl-add:hover,
+.wl-add.on {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.wl-search {
+  margin: 8px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--rd-sm);
+  background: var(--bg2);
+  box-shadow: none;
+}
+
+.wl-search-input {
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg-input, #0d0f14);
+  color: var(--text);
+}
+
+.wl-search-input:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.wl-filter-stack {
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.wl-filters {
+  gap: 6px;
+  padding: 8px 10px;
+}
+
+.wl-chip {
+  border: 1px solid var(--line-soft);
+  border-radius: var(--rd-sm);
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text2);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wl-chip.on {
+  border-color: var(--accent);
+  background: var(--ag);
+  color: var(--text);
+}
+
+.wl-chip-count {
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+}
+
+.wl-list {
+  padding: 8px;
+}
+
+.wl-item {
+  margin: 0 0 8px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-left-width: 1px;
+  border-radius: var(--rd-sm);
+  background: var(--bg2);
+}
+
+.wl-item:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.wl-item.sel {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: none;
+}
+
+.wl-main {
+  padding-right: 0;
+}
+
+.wl-sym {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.wl-ltp {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.wl-company {
+  max-width: 150px;
+}
+
+.wl-flag {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wl-flag-up {
+  border-color: rgba(39, 215, 150, 0.18);
+  background: rgba(39, 215, 150, 0.1);
+}
+
+.wl-flag-accent {
+  border-color: rgba(87, 199, 255, 0.18);
+  background: rgba(87, 199, 255, 0.1);
+}
+
+.wl-flag-gold {
+  border-color: rgba(255, 188, 99, 0.2);
+  background: rgba(255, 188, 99, 0.1);
+}
+
+.wl-flag-warn {
+  border-color: rgba(255, 111, 127, 0.16);
+  background: rgba(255, 111, 127, 0.08);
+}
+
+.wl-flag-muted {
+  background: rgba(255, 255, 255, 0.04);
+}

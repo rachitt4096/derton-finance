@@ -1,0 +1,215 @@
+.insight-table-wrap,
+.hist-table-wrap,
+.sc-table-wrap,
+.port-table-wrap,
+.book-table-wrap,
+.ow-table-wrap,
+.fw-table-wrap {
+  overflow: auto;
+}
+
+:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) thead th {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+  color: var(--text2);
+  font-size: 13px;
+}
+
+:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody tr:hover td {
+  background: rgba(87, 199, 255, 0.06);
+  color: var(--text);
+}
+
+:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.sc-filter-bar {
+  padding: 14px 16px;
+}
+
+.sc-filter-label {
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.sc-sidebar,
+.port-side,
+.fw-side {
+  padding: 18px 18px 16px;
+}
+
+.sc-wl-item,
+.recent-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sc-wl-item:last-child,
+.recent-item:last-child {
+  border-bottom: 0;
+}
+
+.sc-summary {
+  padding: 12px 14px;
+  gap: 10px;
+}
+
+.sc-sum-item {
+  min-height: 54px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg2);
+}
+
+.sc-sum-l,
+.pc-l {
+  color: var(--text3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.port-top {
+  gap: 12px;
+}
+
+.port-card {
+  min-height: 110px;
+  padding: 16px 18px;
+}
+
+.pc-v {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.pc-c {
+  margin-top: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+}
+
+.book-header {
+  margin-top: 14px;
+  padding: 14px 16px;
+}
+
+.port-side-body {
+  padding-top: 8px;
+}
+
+.ow-hero {
+  min-height: 122px;
+  padding: 22px;
+  border-radius: 3px;
+  background: var(--bg1);
+}
+
+.ow-h-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.ow-countdown {
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg2);
+}
+
+.ow-status {
+  border: 1px solid rgba(52, 160, 106, 0.25);
+  border-radius: 3px;
+  background: rgba(52, 160, 106, 0.1);
+  color: var(--green);
+}
+
+.ow-stock-card {
+  padding: 16px;
+}
+
+.owc-sym {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.owc-co {
+  margin-top: 4px;
+  color: var(--text3);
+}
+
+.owc-gap {
+  margin: 14px 0 12px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.fw-summary-bar {
+  padding: 10px;
+  gap: 10px;
+}
+
+.fw-count {
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.sev-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sev-critical {
+  border: 1px solid rgba(255, 111, 127, 0.18);
+  background: rgba(255, 111, 127, 0.1);
+}
+
+.sev-warn {
+  border: 1px solid rgba(255, 188, 99, 0.18);
+  background: rgba(255, 188, 99, 0.1);
+}
+
+.sev-info {
+  border: 1px solid rgba(87, 199, 255, 0.18);
+  background: rgba(87, 199, 255, 0.1);
+}
+

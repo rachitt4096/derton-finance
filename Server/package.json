@@ -1,0 +1,31 @@
+{
+  "name": "derton-finance-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/app/server.js",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "test": "node --import tsx --test $(find src -name '*.test.ts' -type f | sort)",
+    "backfill:candles": "tsx src/scripts/backfillMarketCandles.ts"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^10.0.1",
+    "@fastify/cors": "^10.0.2",
+    "bcryptjs": "^2.4.3",
+    "fastify": "^5.2.1",
+    "pg": "^8.13.1",
+    "upstox-js-sdk": "^2.17.0",
+    "ws": "^8.18.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.11",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

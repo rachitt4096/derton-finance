@@ -1,0 +1,11 @@
+/* Ordered legacy manifest.
+   These imports preserve the original cascade order from the previous
+   monolithic stylesheet. Move rules out of this folder when a feature gets
+   proper component/page ownership. */
+
+@import './legacy/01-market-panel-parity.css';
+@import './legacy/02-responsive-stabilization.css';
+@import './legacy/03-watchlist-overrides.css';
+@import './legacy/04-compact-terminal.css';
+@import './legacy/05-desktop-dashboard-surfaces.css';
+@import './legacy/06-v6-exact-size.css';

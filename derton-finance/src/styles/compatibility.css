@@ -1,0 +1,521 @@
+/* =====================================================================
+   LAYOUT-FIX.CSS  ·  Derton Finance Terminal
+   Loaded LAST. Engineered overrides for:
+
+   1. Containment      — nothing escapes the viewport
+   2. Responsive rails — sidebars use clamp(), not fixed px
+   3. Flex safety      — every flex/grid child gets min-width: 0
+   4. Density          — 1366×768 first-class target
+   5. Terminal tokens  — desaturated green / red, no glow
+   6. Tables/charts    — internal scroll, never push the layout
+
+   Rule: this file does not touch component logic. Pure CSS layer.
+   ===================================================================== */
+
+
+/* ── 1. App shell — vertical stack, hard contained ────────────────── */
+
+.app-shell {
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell > * { min-width: 0; max-width: 100%; }
+
+
+/* ── 2. Topbar / IndexBar density (1366×768 first) ────────────────── */
+
+#indexbar {
+  min-height: 34px !important;
+  height: 34px !important;
+  flex-shrink: 0;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+#indexbar::-webkit-scrollbar { height: 4px; }
+#indexbar::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+@media (min-width: 1600px) {
+  #indexbar { min-height: 38px !important; height: 38px !important; }
+}
+
+
+/* ── 3. Screens region — single flexing container ─────────────────── */
+
+#screens {
+  flex: 1 1 0;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.screen-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+
+/* ── 4. Dashboard 3-col layout (Watchlist | Chart | Info) ─────────── */
+
+.s1-body {
+  display: grid;
+  grid-template-columns:
+    clamp(160px, 14vw, 220px)
+    minmax(0, 1fr)
+    clamp(300px, 26vw, 400px);
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  gap: var(--sp-2);
+  padding: 0;
+}
+
+.s1-body > * { min-width: 0; min-height: 0; overflow: hidden; }
+
+.right-col-stack {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  gap: var(--sp-2);
+}
+
+.right-col-stack > .info-panel.info-panel-market {
+  flex: 1 1 0;
+  min-height: 0;
+  height: auto;
+}
+
+.right-col-stack > .dash-ai {
+  flex: 1 1 auto;
+  margin-top: 0;
+  min-height: 100px;
+}
+
+.wl-sidebar {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--rd-sm);
+}
+
+.wl-list {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.wl-list::-webkit-scrollbar { width: 6px; }
+.wl-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: var(--rd-sm); }
+
+.info-panel.info-panel-market {
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  height: 100%;
+  flex-shrink: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: var(--rd-sm);
+}
+
+.chart-area {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--rd-sm);
+}
+
+.chart-area > .graph-meta:last-child {
+  border-radius: 0 0 var(--rd-sm) var(--rd-sm);
+}
+
+.graph-shell {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 0;
+  overflow: hidden;
+}
+
+.graph-shell > .chart-mount,
+.chart-mount > .chart-wrap,
+.chart-wrap > .tv-chart,
+.tv-lightweight-charts {
+  width: 100% !important;
+}
+
+.graph-shell > .chart-mount,
+.chart-mount > .chart-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+/* MainChart renders .chart-wrap directly inside .graph-shell (no .chart-mount).
+   Force it to fill the panel so the Lightweight Charts canvas can't collapse to
+   its creation fallback. */
+.graph-shell > .chart-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chart-wrap > .tv-chart {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.native-chart-wrap {
+  position: absolute !important;
+  inset: 0;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  cursor: crosshair;
+}
+
+.native-chart-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.native-chart-tooltip {
+  position: absolute;
+  z-index: 14;
+  display: grid;
+  gap: 3px;
+  min-width: 128px;
+  padding: 8px 10px;
+  border: 1px solid rgba(124, 148, 184, 0.28);
+  border-radius: 6px;
+  background: rgba(9, 13, 22, 0.94);
+  color: var(--text2);
+  font-family: var(--mono);
+  font-size: 10px;
+  pointer-events: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+}
+
+.native-chart-tooltip strong {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.chart-wrap > * { max-width: 100%; }
+
+/* Mid-laptop fallback: drop the right rail under 1180px to keep chart usable */
+@media (max-width: 1120px) {
+  .s1-body {
+    grid-template-columns: clamp(200px, 20vw, 240px) minmax(0, 1fr);
+  }
+  .right-col-stack { display: none; }
+}
+
+/* Narrow: drop watchlist too (rare on trading desks) */
+@media (max-width: 800px) {
+  .s1-body { grid-template-columns: minmax(0, 1fr); }
+  .wl-sidebar { display: none; }
+}
+
+
+/* ── 6. Flex-safety: any flex container with text children ─────────── */
+
+.s2-headline-row > *,
+.s2-ident,
+.s2-title-line,
+.s2-price-block,
+.sd-shortcuts,
+.s2-flags,
+.s2-top,
+.s2-hero,
+.s2-row,
+.wl-head,
+.wl-row,
+.wl-cell,
+.sc-row,
+.sc-cell,
+.ow-row,
+.ow-cell,
+.holdings-row,
+.holdings-cell,
+.flag-row {
+  min-width: 0;
+}
+
+
+/* ── 7. Tables — internal scroll, never push parent ────────────────── */
+
+.sc-table-wrap,
+.ow-table-wrap,
+.holdings-table-wrap,
+.txn-table-wrap,
+[class*="table-wrap"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+[class*="table-wrap"]::-webkit-scrollbar { height: 6px; }
+[class*="table-wrap"]::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+.sc-table,
+.ow-table,
+.holdings-table,
+.txn-table,
+table {
+  table-layout: auto;
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+}
+
+:is(
+  .sc-table, .ow-table, .holdings-table, .txn-table,
+  .insight-table, .hist-table, .ptable, .fw-table, .book-table
+) th,
+:is(
+  .sc-table, .ow-table, .holdings-table, .txn-table,
+  .insight-table, .hist-table, .ptable, .fw-table, .book-table
+) td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+
+
+/* ── 8. Panels — always obey parent ─────────────────────────────────── */
+
+.terminal-panel,
+.panel,
+.card,
+.s2-card,
+.s2-block,
+.wl-card,
+.ip-card,
+.gp-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* No absolute positioning leaks out */
+.screen .pop, .screen .menu, .screen .dropdown, .screen .tip {
+  max-width: min(420px, 90vw);
+}
+
+
+/* ── 8. Modals & overlays — always contained ───────────────────────── */
+
+.exp-modal,
+[role="dialog"],
+.modal-shell {
+  max-width: min(560px, 92vw);
+  max-height: 90vh;
+  overflow: auto;
+}
+
+/* Toast container should not block clicks behind it */
+.toasts, .toast-stack { max-width: min(420px, 90vw); }
+
+
+/* ── Up / Down classes — desaturated market colors ─────────────────── */
+
+body[data-theme='dark'] .up,
+body[data-theme='dark'] .p-up,
+body[data-theme='dark'] [data-tone="up"] {
+  color: var(--green);
+}
+body[data-theme='dark'] .dn,
+body[data-theme='dark'] .p-dn,
+body[data-theme='dark'] [data-tone="dn"] {
+  color: var(--red);
+}
+
+body[data-theme='dark'] .s2-price.up,
+body[data-theme='dark'] .price-large.up,
+body[data-theme='dark'] strong.up,
+body[data-theme='dark'] b.up {
+  color: var(--green);
+}
+body[data-theme='dark'] .s2-price.dn,
+body[data-theme='dark'] .price-large.dn,
+body[data-theme='dark'] strong.dn,
+body[data-theme='dark'] b.dn {
+  color: var(--red);
+}
+
+
+/* ── Tick flash micro-animation for live updates ───────────────────── */
+
+@keyframes flashUp {
+  0%   { background: var(--green-soft); }
+  100% { background: transparent; }
+}
+@keyframes flashDn {
+  0%   { background: var(--red-soft); }
+  100% { background: transparent; }
+}
+.flash-up { animation: flashUp 1.1s ease-out; }
+.flash-dn { animation: flashDn 1.1s ease-out; }
+
+
+/* ── Index bar tile readability ────────────────────────────────────── */
+
+#indexbar .idx-c.up,  .idx-c.up  { color: var(--green); font-weight: 700; }
+#indexbar .idx-c.dn,  .idx-c.dn  { color: var(--red);   font-weight: 700; }
+
+
+/* ── Buttons that semantically signal up/down ──────────────────────── */
+
+.btn-up, .action-up, [data-action="buy"] {
+  background: var(--green-soft);
+  border: 1px solid var(--green-bord);
+  color: var(--green);
+}
+.btn-dn, .action-dn, [data-action="sell"] {
+  background: var(--red-soft);
+  border: 1px solid var(--red-bord);
+  color: var(--red);
+}
+
+
+/* =====================================================================
+   DENSITY  ·  1366×768 trading-laptop target
+   ===================================================================== */
+
+@media (max-width: 1440px) {
+  .screen { font-size: 12.5px; }
+
+  .wl-head, .ip-head, .ow-head, .sc-head { padding: 8px 10px; }
+
+  .terminal-panel, .panel, .s2-card, .s2-block {
+    padding: 8px 10px;
+  }
+
+  .s2-hdr { padding: 10px 14px 8px; }
+
+  /* Tighten chip / button paddings on dense laptops */
+  .wl-chip, .sc-chip, .ow-chip, .btn-sm { padding: 4px 8px; font-size: 11px; }
+}
+
+@media (max-width: 1366px) {
+  #topbar { padding: 0 12px; gap: 10px; }
+  .logo-name { font-size: 18px; }
+  .nav { gap: 6px; padding: 3px 4px; }
+  .nav-btn { padding: 6px 10px; font-size: 12px; }
+  .topbar-right { gap: 8px; }
+}
+
+
+/* =====================================================================
+   ULTRA-WIDE  ·  cap content sanity past 1920px to preserve hierarchy
+   ===================================================================== */
+
+@media (min-width: 1920px) {
+  .s1-body {
+    grid-template-columns:
+      clamp(240px, 16vw, 320px)
+      minmax(0, 1fr)
+      clamp(280px, 18vw, 360px);
+  }
+}
+
+
+/* =====================================================================
+   REUSABLE GRID PRIMITIVES  ·  use these in new components
+   Each cell already gets min-width: 0; safe to put text or tables inside
+   ===================================================================== */
+
+.term-shell {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.term-body {
+  display: grid;
+  grid-template-columns:
+    clamp(220px, 18vw, 280px)
+    minmax(0, 1fr)
+    clamp(240px, 20vw, 320px);
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  height: 100%;
+}
+.term-body > * { min-width: 0; min-height: 0; overflow: hidden; }
+
+@media (max-width: 1180px) {
+  .term-body {
+    grid-template-columns: clamp(200px, 20vw, 240px) minmax(0, 1fr);
+  }
+  .term-body > :nth-child(3) { display: none; }
+}
+
+.term-row    { display: flex; gap: 8px; min-width: 0; min-height: 0; }
+.term-row > * { min-width: 0; }
+
+.term-col    { display: flex; flex-direction: column; gap: 8px; min-width: 0; min-height: 0; }
+.term-col > * { min-width: 0; }
+
+.term-stretch { flex: 1 1 0; min-height: 0; min-width: 0; overflow: hidden; }
+
+
+/* =====================================================================
+   SAFETY  ·  emergency overflow guard for unknown widgets
+   ===================================================================== */
+
+[class*="-shell"]  { min-width: 0; min-height: 0; }
+[class*="-grid"]   { min-width: 0; }
+[class*="-stack"]  { min-width: 0; }
+[class*="-row"]    { min-width: 0; }
+[class*="-cell"]   { min-width: 0; }
+[class*="-panel"]  { min-width: 0; max-width: 100%; }
+[class*="-card"]   { min-width: 0; max-width: 100%; }

@@ -1,0 +1,17 @@
+@import './styles/fonts.css';
+@import './styles/themes.css';
+@import './styles/base.css';
+
+/* Legacy terminal surfaces and page-level styles. Keep these before parity and
+   compatibility overrides so newer layers can intentionally refine them. */
+@import './styles/legacy-terminal.css';
+@import './styles/v5-parity.css';
+@import './styles/login.css';
+@import './styles/refresh.css';
+
+/* Late-stage layout and workstation overrides. */
+@import './styles/compatibility.css';
+@import './styles/institutional-terminal.css';
+
+/* Screen-specific page overrides (stock detail, opening window, etc.). */
+@import './styles/screen-overrides.css';

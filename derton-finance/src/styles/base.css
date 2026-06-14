@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(14px, 0.6vw + 8px, 19px);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+body {
+  min-width: 0;
+  overscroll-behavior: none;
+  background: var(--bg0);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.tv-lightweight-charts,
+.tv-lightweight-charts canvas {
+  max-width: none !important;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border2) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--line-strong);
+}
+
+.mono {
+  font-family: 'Roboto Mono', 'IBM Plex Mono', 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
