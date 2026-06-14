@@ -5,6 +5,13 @@
   padding: 18px 18px 16px;
 }
 
+/* refresh/07 compact override — wins at runtime */
+.sc-sidebar,
+.port-side,
+.fw-side {
+  padding: 12px 12px 10px;
+}
+
 /* ── P9: Overflow hidden group ─────────────────────────────────── */
 .wl-sidebar,
 .graph-shell,
