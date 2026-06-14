@@ -29,5 +29,3 @@
 /* ── P15: Market direction colors ───────────────────────────────── */
 .up  { color: var(--green); }
 .dn  { color: var(--red); }
-.up-bg { background: rgba(52, 160, 106, 0.08); }
-.dn-bg { background: rgba(208, 90, 85, 0.08); }

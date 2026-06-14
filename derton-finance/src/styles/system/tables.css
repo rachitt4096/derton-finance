@@ -7,8 +7,6 @@
 /* ── P2: Table frame — collapse override for specific families ── */
 .sc-table,
 .ow-table,
-.holdings-table,
-.txn-table,
 table {
   border-collapse: collapse;
 }
@@ -69,11 +67,11 @@ table {
 
 /* ── P12: Cell text truncation ─────────────────────────────────── */
 :is(
-  .sc-table, .ow-table, .holdings-table, .txn-table,
+  .sc-table, .ow-table,
   .insight-table, .hist-table, .ptable, .fw-table, .book-table
 ) th,
 :is(
-  .sc-table, .ow-table, .holdings-table, .txn-table,
+  .sc-table, .ow-table,
   .insight-table, .hist-table, .ptable, .fw-table, .book-table
 ) td {
   white-space: nowrap;
