@@ -1,62 +1,119 @@
 
 @media (max-width: 1365px) {
   #topbar {
+    width: calc(100% - 20px);
+    margin: 12px auto 8px;
+  }
 
   #indexbar,
   #screens .screen {
+    max-width: none;
+  }
 
   #indexbar {
+    width: calc(100% - 20px);
+  }
 
   #screens {
+    padding: 0 10px 20px;
+  }
 
   .info-panel.info-panel-market {
+    width: 328px;
+  }
 
   #topbar,
   #indexbar {
+    width: calc(100% - 20px);
+    border-radius: var(--rd-2xl);
+  }
 
   .logo {
+    width: 100%;
+    justify-content: center;
+  }
 
   .nav {
+    justify-content: center;
+  }
 
   .topbar-right {
+    width: 100%;
+    justify-content: center;
+  }
 
   .info-panel.info-panel-market,
   .wl-sidebar,
   .sc-sidebar,
   .port-side,
   .fw-side {
+    width: auto !important;
+  }
 
   #topbar,
   #indexbar {
+    width: calc(100% - 12px);
+  }
 
   #topbar {
+    margin: 6px auto 4px;
+  }
 
   #screens {
+    padding: 0 6px 10px;
+  }
 
   .info-panel.info-panel-market {
+    width: 292px;
+  }
 
   #topbar,
   #indexbar {
+    border-radius: 16px;
+  }
 
   #topbar {
+    flex-wrap: wrap;
+  }
 
   .nav {
+    flex: 1 1 100%;
+  }
 
   .topbar-right {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+  }
 
   #indexbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 
   #screens .screen {
+    height: auto;
+    min-height: 100%;
+  }
 
   .screen-col {
+    overflow: visible;
+  }
 
   .info-panel.info-panel-market,
   .sc-sidebar,
   .port-side,
   .fw-side {
+    flex-basis: 100%;
+    min-width: 0;
+  }
 
+  .ow-hero {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
 
   .ow-status {
+    justify-self: start;
+  }
 
   .logo,
   .nav,
@@ -70,50 +127,98 @@
   .port-side,
   .fw-table-wrap,
   .fw-side {
+    flex-basis: 100%;
+    min-width: 0;
+  }
 
   .s1-body,
   .sc-body,
   .port-body,
   .fw-body {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: visible;
+  }
 
   .topbar-right {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
 
   .chart-area,
   .sc-table-wrap,
   .port-main,
   .fw-table-wrap {
+    flex-basis: 100%;
+  }
 
   .chart-ctrl-actions {
+    justify-content: flex-start;
+  }
 
   .graph-btns {
+    margin-left: 0;
+  }
 
+  .ow-hero {
+    grid-template-columns: 1fr;
+  }
 
   .ow-countdown,
   .ow-status {
+    justify-self: start;
+  }
 }
 
 @media (max-width: 899px) {
   #topbar,
   #indexbar {
+    width: calc(100% - 12px);
+    margin-inline: auto;
+    padding-inline: 12px;
+    border-radius: 18px;
+  }
 
   #screens {
+    padding: 0 6px 14px;
+  }
 
   .nav-btn {
+    min-height: 42px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
 
   .port-card,
   .s2-rich-card,
   .ow-stock-card,
   .fw-side,
   .sc-sidebar {
+    padding: 14px;
+  }
 
   #toasts {
+    right: 8px;
+    left: 8px;
+    width: auto;
+    bottom: 8px;
+  }
 
   #topbar,
   #indexbar {
+    width: calc(100% - 6px);
+    padding-inline: 8px;
+    border-radius: var(--rd-xl);
+  }
 
   #screens {
+    padding: 0 3px 8px;
+  }
 
   .nav-btn {
+    min-height: 36px;
+    padding: 6px 9px;
+  }
 
   #indexbar,
   .port-top,
@@ -121,32 +226,73 @@
   .fw-summary-bar,
   .s2-stats,
   .s2-bottom {
+    grid-template-columns: 1fr;
+  }
 
+  .chart-hint {
+    white-space: normal;
+  }
 }
 
 /* Compact viewport-fit pass */
 
 #topbar {
+  width: min(1440px, calc(100% - 24px));
+  min-height: 56px;
+  margin: 8px auto 6px;
+  padding: 0 16px;
+  gap: 14px;
+  border-radius: var(--rd-2xl);
+}
 
 .logo {
+  padding: 8px 12px;
+  border-radius: 16px;
+}
 
 .logo-mark,
 .logo-hex {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+}
 
 .logo-name {
+  font-size: 1rem;
+}
 
 .logo-sub {
+  margin-top: 2px;
+  font-size: 8px;
+  letter-spacing: 0.14em;
+}
 
 .nav {
+  gap: 6px;
+  padding: 4px;
+  border-radius: 16px;
+}
 
 .nav-btn {
+  min-height: 40px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  white-space: nowrap;
+}
 
 .topbar-right {
+  gap: 8px;
+}
 
 .market-pill,
 #clock,
 .broker-btn,
 .logout-btn {
+  min-height: 38px;
+  padding-inline: 12px;
+  border-radius: 12px;
+}
 
 .market-pill span,
 .th-btn,
@@ -163,20 +309,48 @@
 .s2-rl,
 .perf-row span:first-child,
 .ow-detail-label {
+  font-size: 9px;
+}
 
 .theme-group {
+  padding: 3px;
+  border-radius: 12px;
+}
 
 .th-btn {
+  min-height: 30px;
+  padding-inline: 10px;
+  border-radius: var(--rd-lg);
+}
 
 #indexbar {
+  width: min(1440px, calc(100% - 24px));
+  min-height: 40px;
+  margin: 0 auto 6px;
+  padding: 4px 8px;
+  gap: 6px;
+  border-radius: var(--rd-xl);
+}
 
 .idx {
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: var(--rd-lg);
+}
 
 .idx-v {
+  font-size: 12px;
+}
 
 .idx-c {
+  font-size: 9px;
+}
 
 #screens {
+  min-height: 0;
+  padding: 0 12px 12px;
+  overflow: auto;
+}
 
 #screens .screen,
 .screen-col,
@@ -188,9 +362,19 @@
 .s2-body,
 .chart-area,
 .port-main {
+  min-height: 0;
+}
 
 .screen {
+  gap: 10px;
+}
 
+.s1-open-bar {
+  min-height: 36px;
+  padding-inline: 12px;
+  gap: 12px;
+  border-radius: var(--rd-xl);
+}
 
 :is(
   .wl-sidebar,
@@ -221,41 +405,81 @@
   .book-header,
   .book-table-wrap
 ) {
+  border-radius: var(--rd-sm);
+  box-shadow: none;
+}
 
 .wl-sidebar {
+  width: 248px;
+}
 
 .info-panel.info-panel-market {
+  width: 320px;
+  border-radius: 16px;
+}
 
 .wl-head {
+  padding: 10px 12px 8px;
+}
 
 .wl-title {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
 
 .wl-search {
+  margin: 8px;
+}
 
 .wl-filters {
+  gap: 5px;
+  padding: 6px 8px;
+}
 
 .wl-item {
+  padding: 7px 9px;
+  border-radius: var(--rd-xl);
+}
 
 .stock-hdr {
+  padding: 12px 14px;
+}
 
 .sh-sym {
+  font-size: 26px;
+}
 
 .sh-price {
+  font-size: 34px;
+}
 
 .sh-inline-change,
 .sh-close-panel .sh-close-change {
+  font-size: 14px;
+}
 
+.sh-stats {
+  margin-top: 10px;
+  gap: 8px;
+}
 
 .ss-item,
 .s2-stat {
+  border-radius: 12px;
+}
 
 .ss-val,
 .s2-sv {
+  font-size: 15px;
+}
 
 .band-bar,
 .chart-ctrl,
 .s2-ctrl,
 .ind-panel {
+  padding: 8px 12px;
+  border-radius: var(--rd-xl);
+}
 
 .tf-btn,
 .ct-btn,
@@ -263,208 +487,471 @@
 .graph-btn,
 .exp-btn,
 .ind-toggle {
+  min-height: 32px;
+  padding-inline: 10px;
+  border-radius: var(--rd-lg);
+  font-size: 10px;
+}
 
 .sep {
+  height: 16px;
+}
 
 .graph-shell {
+  border-radius: 16px;
+}
 
 #s1 .graph-shell {
+  height: clamp(200px, 31vh, 320px) !important;
+  max-height: 320px;
+}
 
 .s2-chart {
+  height: clamp(240px, 34vh, 360px) !important;
+}
 
 .s2-top {
+  gap: 12px;
+}
 
 .s2-sym {
+  font-size: 28px;
+}
 
 .s2-price {
+  margin-top: 8px;
+  font-size: 32px;
+}
 
 .s2-bottom {
+  height: 168px;
+}
 
 .s2-rich-card {
+  padding: 12px;
+}
 
 .s2-rich-title,
 .hist-title,
 .sc-sb-title,
 .book-title,
 .fw-side-title {
+  font-size: 12px;
+}
 
 .s2-info-row,
 .perf-row,
 .owc-row,
 .ow-detail-row,
 .s2-row {
+  padding-block: 7px;
+}
 
 .insight-book-head,
 .insight-book-row {
+  gap: 8px;
+}
 
 .insight-book-row {
+  padding-block: 6px;
+}
 
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) thead th {
+  padding: 10px 12px;
+  font-size: 9px;
+}
 
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody td {
+  padding: 10px 12px;
+  font-size: 12px;
+}
 
 .sc-filter-bar {
+  padding: 10px 12px;
+}
 
 .sc-sidebar,
 .port-side,
 .fw-side {
+  padding: 12px 12px 10px;
+}
 
 .sc-summary {
+  padding: 8px 10px;
+  gap: 8px;
+}
 
 .sc-sum-item {
+  min-height: 42px;
+  padding: 8px 10px;
+}
 
 .port-top {
+  gap: 8px;
+}
 
 .port-card {
+  min-height: 84px;
+  padding: 12px 14px;
+}
 
 .pc-v {
+  margin-top: 8px;
+  font-size: 20px;
+}
 
 .pc-c {
+  margin-top: 6px;
+  font-size: 10px;
+}
 
 .book-header {
+  margin-top: 10px;
+  padding: 10px 12px;
+}
 
+.ow-hero {
+  min-height: 94px;
+  padding: 14px 16px;
+  border-radius: 18px;
+}
 
 .ow-h-title {
+  font-size: 1.35rem;
+}
 
 .ow-countdown {
+  border-radius: 12px;
+}
 
+.ow-stock-card {
+  padding: 12px;
+}
 
+.owc-gap {
+  margin: 10px 0 8px;
+  font-size: 20px;
+}
 
 .fw-summary-bar {
+  padding: 8px;
+  gap: 8px;
+}
 
 .fw-count {
+  min-height: 38px;
+  padding-inline: 12px;
+  border-radius: 12px;
+}
 
 .sev-badge {
+  min-height: 22px;
+}
 
 #toasts {
+  width: min(320px, calc(100vw - 24px));
+  right: 12px;
+  bottom: 12px;
+}
 
 .toast {
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: var(--rd-xl);
+}
 
 .toast-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  font-size: 11px;
+}
 
 .toast-message {
+  font-size: 12px;
+  line-height: 1.35;
+}
 
 
 @media (min-width: 1366px) {
   #topbar,
   #indexbar {
+    width: min(1760px, calc(100% - 12px));
+  }
 
   #screens .screen {
+    max-width: 1760px;
+  }
 }
 
 /* Responsive desktop and monitor scaling */
 
 .app-shell {
+  --shell-inline-gutter: clamp(6px, 0.6vw, 12px);
+  --watchlist-width: clamp(220px, 15vw, 270px);
+  --info-panel-width: clamp(260px, 19vw, 330px);
+  --side-panel-width: clamp(230px, 17vw, 280px);
+}
 
 #topbar,
 #indexbar {
+  width: calc(100% - (var(--shell-inline-gutter) * 2));
+}
 
 #screens {
+  padding-inline: var(--shell-inline-gutter);
+}
 
 #screens .screen {
+  max-width: none;
+}
 
 #topbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
 .logo {
+  flex: 0 0 auto;
+  min-width: 0;
+}
 
 .nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
 
 .topbar-right {
+  display: flex;
+  flex: 0 0 auto;
+  min-width: 0;
+  justify-content: flex-end;
+  gap: 10px;
+}
 
 .market-pill,
 #clock,
 .theme-group,
 .broker-btn,
 .logout-btn {
+  flex: 0 0 auto;
+}
 
 #indexbar {
+  display: flex;
+  align-items: stretch;
+}
 
 .idx {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
 
 .s1-body,
 .sc-body,
 .port-body,
 .fw-body {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch;
+  overflow: hidden;
+}
 
 .wl-sidebar {
+  width: auto;
+  flex: 0 0 var(--watchlist-width);
+  min-width: 220px;
+  max-width: 100%;
+}
 
 .chart-area,
 .sc-table-wrap,
 .port-main,
 .fw-table-wrap {
+  flex: 999 1 720px;
+  min-width: 0;
+}
 
 .info-panel.info-panel-market {
+  width: auto;
+  flex: 0 0 var(--info-panel-width);
+  min-width: 260px;
+  max-width: 100%;
+}
 
 .sc-sidebar,
 .port-side,
 .fw-side {
+  flex: 0 0 var(--side-panel-width);
+  min-width: 230px;
+  max-width: 100%;
+}
 
 .port-top,
 .sc-summary,
 .fw-summary-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
 
+.ow-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px 16px;
+}
 
+.ow-cards-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
 
 .s2-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
 .s2-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
 
 .s2-bottom {
+  height: auto;
+  max-height: none;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
 
 .s2-col {
+  min-height: 160px;
+}
 
 .chart-ctrl,
 .s2-ctrl,
 .ind-panel {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .chart-ctrl-main,
 .chart-ctrl-actions,
 .chart-ctrl-group,
 .graph-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .chart-ctrl-main {
+  flex: 1 1 560px;
+  gap: 8px 12px;
+}
 
 .chart-ctrl-actions {
+  flex: 1 1 280px;
+  justify-content: space-between;
+  gap: 8px 12px;
+}
 
 .chart-ctrl-group {
+  gap: 8px;
+}
 
 .graph-btns {
+  gap: 8px;
+  margin-left: auto;
+}
 
+.chart-hint {
+  white-space: nowrap;
+}
 
 @media (max-height: 980px) {
   #topbar {
+    min-height: 56px;
+    margin-bottom: 4px;
+    padding: 0 16px;
+  }
 
   #indexbar {
+    min-height: 36px;
+    margin-bottom: 4px;
+    padding: 4px 6px;
+  }
 
   #screens {
+    padding-bottom: 8px;
+  }
 
   .screen {
+    gap: 8px;
+  }
 
+  .s1-open-bar {
+    min-height: 32px;
+    padding-inline: 10px;
+    gap: 10px;
+  }
 
   .wl-head {
+    padding: 8px 10px 6px;
+  }
 
   .wl-filters {
+    padding: 4px 6px;
+    gap: 4px;
+  }
 
   .wl-list {
+    padding: 6px;
+  }
 
   .wl-item {
+    margin-bottom: 6px;
+  }
 
   .stock-hdr {
+    padding: 10px 12px;
+  }
 
   .sh-sym {
+    font-size: 24px;
+  }
 
   .sh-price {
+    font-size: 30px;
+  }
 
   .sh-inline-change,
   .sh-close-panel .sh-close-change {
+    font-size: 13px;
+  }
 
+  .sh-stats {
+    margin-top: 8px;
+    gap: 6px;
+  }
 
+  .ss-item {
+    padding: 8px 10px;
+  }
 
+  .ss-val {
+    font-size: 14px;
+  }
 
   .band-bar,
   .chart-ctrl,
   .s2-ctrl,
   .ind-panel {
+    padding: 6px 10px;
+  }
 
   .tf-btn,
   .ct-btn,
@@ -472,53 +959,112 @@
   .graph-btn,
   .exp-btn,
   .ind-toggle {
+    min-height: 28px;
+    padding-inline: 8px;
+  }
 
   #s1 .graph-shell {
+    height: clamp(180px, 27vh, 280px) !important;
+    max-height: 280px;
+  }
 
   .graph-meta {
+    padding: 8px 10px;
+  }
 
   .graph-meta-grid-flat .gm-stack {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 6px;
+    padding: 6px 8px;
+  }
 
   .gm-item {
+    padding: 8px 10px;
+    gap: 10px;
+  }
 
   .gm-item-label {
+    font-size: 9px;
+  }
 
   .ticker {
+    margin-top: 0;
+  }
 
   .info-panel.info-panel-market {
+    min-width: 240px;
+  }
 
   .info-panel-market .nse-block {
+    padding: 10px 10px 8px;
+  }
 
   .info-panel-market .nse-block-title {
+    margin: -10px -10px 8px;
+    padding: 8px 10px 7px;
+  }
 
   .info-panel-market .alert-row {
+    padding: 6px 0;
+  }
 }
 
 @media (max-height: 860px) {
   #topbar {
+    min-height: 56px;
+    padding: 0 16px;
+  }
 
   #indexbar {
+    min-height: 32px;
+  }
 
+  .s1-open-bar {
+    min-height: 30px;
+  }
 
   .stock-hdr {
+    padding: 8px 10px;
+  }
 
   .sh-sym {
+    font-size: 22px;
+  }
 
   .sh-price {
+    font-size: 27px;
+  }
 
   #s1 .graph-shell {
+    height: clamp(160px, 24vh, 240px) !important;
+    max-height: 240px;
+  }
 
   .graph-meta-grid-flat .gm-stack {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1920px) {
   #topbar {
+    min-height: 60px;
+    height: 60px;
+    padding: 0 22px;
+  }
 
   .app-shell {
+    --watchlist-width: clamp(252px, 15vw, 290px);
+    --info-panel-width: clamp(320px, 20vw, 380px);
+  }
 
   #s1 .graph-shell {
+    height: clamp(250px, 35vh, 400px) !important;
+    max-height: 400px;
+  }
 
   .s2-chart {
+    height: clamp(310px, 41vh, 480px) !important;
+  }
 }
 
 /* Tall displays (QHD / 4K, including a 4K panel at 150% OS scaling ~1440px tall).
@@ -528,8 +1074,18 @@
    it — keyed on viewport HEIGHT so standard 1080p desktops are untouched. */
 @media (min-height: 1150px) {
   #s1 .graph-shell {
+    height: auto !important;
+    max-height: none !important;
+    flex: 1 1 auto !important;
+    min-height: 460px;
+  }
 
   .s2-chart {
+    height: auto !important;
+    max-height: none !important;
+    flex: 1 1 auto !important;
+    min-height: 520px;
+  }
 }
 
 
