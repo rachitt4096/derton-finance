@@ -233,7 +233,7 @@
   border-radius: 6px;
   background: rgba(9, 13, 22, 0.94);
   color: var(--text2);
-  font-family: var(--mono);
+  font-family: var(--font-mono);
   font-size: 10px;
   pointer-events: none;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);

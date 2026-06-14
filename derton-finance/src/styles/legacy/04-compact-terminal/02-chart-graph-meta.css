@@ -559,7 +559,7 @@ body[data-theme='dark'] .opening-zone-overlay span {
   border: 1px solid var(--border2);
   border-radius: 14px;
   background: linear-gradient(180deg, var(--panel), var(--card));
-  box-shadow: var(--shadow);
+  box-shadow: var(--panel-shadow);
   padding: 14px 16px;
   pointer-events: none;
 }
@@ -629,7 +629,7 @@ canvas {
   padding: 12px 14px;
   border: 1px solid var(--border2);
   background: linear-gradient(180deg, var(--panel), var(--card));
-  box-shadow: var(--shadow);
+  box-shadow: var(--panel-shadow);
   pointer-events: none;
   font-size: 11px;
 }

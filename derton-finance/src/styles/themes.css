@@ -3,7 +3,6 @@
   --font-ui: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Bebas Neue', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-  --mono: var(--font-mono);
   --font-label: 'JetBrains Mono', monospace;
   --font-price: 'JetBrains Mono', monospace;
 
@@ -16,16 +15,6 @@
   --z-toast: 100;
   --z-fullscreen: 200;
 
-  --ix-accent: var(--accent);
-  --ix-accent-2: var(--accent2);
-  --ix-up: var(--green);
-  --ix-down: var(--red);
-  --ix-warn: var(--gold);
-  --ix-text-strong: var(--text);
-  --ix-text: var(--text2);
-  --ix-text-muted: var(--text3);
-  --ix-border: var(--border);
-  --ix-surface: var(--surface-1);
   --radius: 3px;
 
   /* Spacing Scale */
@@ -153,7 +142,6 @@ body[data-theme='light'] {
   --line-strong: rgba(76, 113, 172, 0.28);
   --panel-shadow: 0 20px 48px rgba(35, 58, 90, 0.1);
   --panel-inset: inset 0 1px 0 rgba(255, 255, 255, 0.85);
-  --shadow: var(--panel-shadow);
 }
 
 body[data-theme='warm'] {
@@ -200,5 +188,4 @@ body[data-theme='warm'] {
   --line-strong: rgba(221, 157, 86, 0.32);
   --panel-shadow: 0 22px 54px rgba(0, 0, 0, 0.26);
   --panel-inset: inset 0 1px 0 rgba(255, 236, 204, 0.08);
-  --shadow: var(--panel-shadow);
 }

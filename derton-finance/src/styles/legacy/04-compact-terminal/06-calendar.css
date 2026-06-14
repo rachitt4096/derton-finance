@@ -207,7 +207,7 @@
   align-items: center;
   gap: 7px;
   font-size: 11px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--panel-shadow);
   pointer-events: all;
   animation: tin 0.3s ease;
 }
