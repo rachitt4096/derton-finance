@@ -1,3 +1,18 @@
+/* ── P2: Table frame — separate spacing base ───────────────────── */
+:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* ── P2: Table frame — collapse override for specific families ── */
+.sc-table,
+.ow-table,
+.holdings-table,
+.txn-table,
+table {
+  border-collapse: collapse;
+}
+
 /* ── P6: Table wrap overflow ───────────────────────────────────── */
 .insight-table-wrap,
 .hist-table-wrap,

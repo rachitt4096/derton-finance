@@ -1,7 +1,5 @@
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
 }
 
 .sc-filter-bar {
