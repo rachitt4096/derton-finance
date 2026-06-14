@@ -1,80 +1,28 @@
 
 .stock-hdr {
-  padding: 14px 16px;
-  background: var(--bg1);
-}
 
 .sh-sym {
-  font-size: 30px;
-  letter-spacing: 0.06em;
-}
 
 .sh-co {
-  color: var(--text2);
-}
 
 .sh-price {
-  font-size: 42px;
-}
 
 .sh-inline-change,
 .sh-close-panel .sh-close-change {
-  font-size: 16px;
-}
 
-.sh-info-badge {
-  border-color: var(--border);
-  background: var(--bg2);
-}
 
-.sh-stats {
-  margin-top: 12px;
-  gap: 8px;
-}
 
-.ss-item {
-  border-radius: var(--rd-sm);
-  border-color: rgba(255, 255, 255, 0.06);
-  background: var(--bg2);
-  box-shadow: none;
-}
 
-.ss-lbl {
-  color: var(--text3);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 
-.ss-val {
-  font-size: 17px;
-}
 
 .band-bar {
-  padding: 8px 12px;
-  border-radius: var(--rd-sm);
-  background: var(--bg2);
-}
 
 .chart-ctrl,
 .s2-ctrl,
 .ind-panel {
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: var(--rd-sm);
-  background: var(--bg2);
-}
 
 .chart-ctrl-label,
 .ind-panel-label {
-  color: var(--text3);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 
 .tf-btn,
 .ct-btn,
@@ -82,17 +30,6 @@
 .graph-btn,
 .exp-btn,
 .ind-toggle {
-  min-height: 36px;
-  padding: 0 12px;
-  border: 1px solid var(--border);
-  border-radius: var(--rd-sm);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--text2);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
 
 .tf-btn:hover,
 .ct-btn:hover,
@@ -100,105 +37,37 @@
 .graph-btn:hover,
 .exp-btn:hover,
 .ind-toggle:hover {
-  border-color: rgba(87, 199, 255, 0.18);
-  background: rgba(87, 199, 255, 0.08);
-  color: var(--text);
-}
 
 .tf-btn.on,
 .ct-btn.on,
 .ind-btn.on,
 .ind-toggle.on {
-  border-color: var(--accent);
-  background: var(--ag);
-  color: var(--text);
-  box-shadow: none;
-}
 
 .graph-btn.active {
-  border-color: rgba(255, 188, 99, 0.26);
-  background: rgba(255, 188, 99, 0.12);
-  color: var(--gold);
-}
 
 .exp-btn {
-  margin-left: 6px;
-}
 
 .sep {
-  height: 20px;
-  background: rgba(255, 255, 255, 0.08);
-}
 
 .graph-shell {
-  border-radius: var(--rd-sm);
-}
 
 .chart-wrap {
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  flex: 1 1 0;
-  overflow: hidden;
-  background: var(--bg1);
-}
 
 .chart-empty-state {
-  color: var(--text2);
-}
 
 .graph-meta {
-  padding: 8px 10px;
-}
 
 .graph-meta-grid-flat,
 .gm-stack {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 8px;
-}
 
 .gm-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 12px;
-  border: 1px solid var(--line-soft);
-  border-radius: var(--rd-sm);
-  background: var(--bg2);
-}
 
 .gm-item-label {
-  color: var(--text3);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
 
 .gm-item-value {
-  color: var(--text);
-  font-weight: 700;
-}
 
 .ticker {
-  margin-top: 2px;
-  border: 1px solid var(--line-soft);
-  border-radius: var(--rd-sm);
-  background: var(--bg1);
-  box-shadow: none;
-}
 
 .ti {
-  gap: 8px;
-  padding: 0 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
-  color: var(--text2);
-  font-family: var(--font-mono);
-  font-size: 10px;
-}
 
 .ti-s {
-  color: var(--text3);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-}

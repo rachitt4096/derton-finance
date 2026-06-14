@@ -1,102 +1,46 @@
 /* Responsive stabilization: apply after all duplicate theme blocks */
 @media (max-width: 1919px) {
   .info-panel.info-panel-market {
-    width: 340px;
-  }
 
   .port-top {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 
-  .ow-cards-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 
   .s2-bottom {
-    height: auto;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 1365px) {
   #topbar {
-    min-height: 0;
-    height: auto;
-    padding: 10px 14px;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
 
   #topbar .logo {
-    min-width: 0;
-  }
 
   #topbar .nav {
-    order: 3;
-    width: 100%;
-    margin-left: 0;
-    justify-content: flex-start;
-  }
 
   #topbar .topbar-right {
-    margin-left: 0;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
   #indexbar {
-    min-height: 0;
-    height: auto;
-    padding: 8px 10px;
-    gap: 8px;
-  }
 
   .idx {
-    min-width: 146px;
-    padding: 8px 12px;
-  }
 
   .wl-sidebar {
-    width: 240px;
-  }
 
   .info-panel.info-panel-market {
-    width: 320px;
-  }
 
   #s1 .chart-area .stock-hdr .sh-stats {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
 
   .graph-meta-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   body {
-    overflow: auto;
-  }
 
   #screens {
-    overflow: auto;
-  }
 
   #screens .screen {
-    height: auto;
-    min-height: 100%;
-  }
 
   #screens .screen-col {
-    overflow: visible;
-  }
 
   .s1-body,
   .sc-body,
   .port-body,
   .fw-body {
-    flex-direction: column;
-    overflow: visible;
-  }
 
   .wl-sidebar,
   .info-panel,
@@ -104,164 +48,73 @@
   .sc-sidebar,
   .port-side,
   .fw-side {
-    width: 100% !important;
-    max-width: none;
-    border-left: 0 !important;
-    border-right: 0 !important;
-    border-top: 1px solid var(--border);
-  }
 
   .chart-area {
-    min-width: 0;
-  }
 
   .graph-shell {
-    height: min(54vh, 420px) !important;
-  }
 
   .chart-wrap {
-    height: 100% !important;
-  }
 
   .s2-chart {
-    height: min(54vh, 420px) !important;
-  }
 
   .s2-bottom {
-    height: auto;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .s2-col {
-    max-height: 220px;
-  }
 
   .port-top {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
-  .ow-cards-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .graph-meta-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 899px) {
   #topbar {
-    padding: 8px 10px;
-    gap: 8px;
-  }
 
   .logo-name {
-    font-size: 18px;
-    letter-spacing: 2px;
-  }
 
   .nav-btn {
-    padding: 6px 10px;
-    font-size: 11px;
-  }
 
   #indexbar {
-    padding: 6px 8px;
-  }
 
   .idx {
-    min-width: 128px;
-    padding: 7px 10px;
-  }
 
-  .s1-open-bar {
-    min-height: 0;
-    height: auto;
-    padding: 6px 8px;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
 
   .stock-hdr {
-    padding: 10px 12px;
-  }
 
   .sh-price {
-    font-size: 28px;
-  }
 
   .sh-inline-change {
-    font-size: 14px;
-  }
 
   #s1 .chart-area .stock-hdr .sh-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   #s1 .chart-area .stock-hdr .ss-item {
-    padding: 8px 9px;
-  }
 
   #s1 .chart-area .stock-hdr .ss-val {
-    font-size: 15px;
-  }
 
   .band-bar {
-    padding: 6px 10px;
-    gap: 10px;
-  }
 
   .chart-ctrl,
   .s2-ctrl {
-    padding: 8px 10px;
-  }
 }
 
 @media (max-width: 639px) {
   .nav {
-    gap: 4px;
-    padding: 3px;
-  }
 
   .nav-btn {
-    font-size: 10px;
-    padding: 5px 8px;
-  }
 
   .wl-main {
-    padding: 7px 8px;
-  }
 
   .wl-sym {
-    font-size: 20px;
-  }
 
   .wl-ltp {
-    font-size: 15px;
-  }
 
   .s2-stats {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    overflow: visible;
-  }
 
   .s2-stat {
-    min-width: 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-  }
 
   .s2-stat:nth-child(odd) {
-    border-right: 1px solid var(--border);
-  }
 
-  .ow-cards-grid {
-    grid-template-columns: 1fr;
-  }
 
   .port-top {
-    grid-template-columns: 1fr;
-  }
 }
 
