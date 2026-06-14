@@ -1,10 +1,7 @@
 :root {
   --font-sans: 'Sora', 'DM Sans', system-ui, sans-serif;
-  --font-ui: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Bebas Neue', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-  --font-label: 'JetBrains Mono', monospace;
-  --font-price: 'JetBrains Mono', monospace;
 
   --z-base: 0;
   --z-raised: 1;
@@ -22,20 +19,7 @@
   --z-overlay-veil: 500;
 
   /* Spacing Scale */
-  --sp-0: 0px;
-  --sp-1: 4px;
-  --sp-1p5: 6px;
   --sp-2: 8px;
-  --sp-2p5: 10px;
-  --sp-3: 12px;
-  --sp-3p5: 14px;
-  --sp-4: 16px;
-  --sp-5: 20px;
-  --sp-6: 24px;
-  --sp-7: 28px;
-  --sp-8: 32px;
-  --sp-10: 40px;
-  --sp-12: 48px;
 
   /* Border Radius Scale */
   --rd-sm: 3px;
@@ -46,16 +30,10 @@
   --rd-full: 9999px;
 
   /* Font Size Scale */
-  --fs-micro: 9px;
   --fs-xs: 10px;
   --fs-sm: 11px;
   --fs-base: 12px;
   --fs-md: 13px;
-  --fs-lg: 16px;
-  --fs-xl: 20px;
-  --fs-2xl: 26px;
-  --fs-3xl: 30px;
-  --fs-4xl: 42px;
 }
 
 body[data-theme='dark'] {
@@ -75,13 +53,11 @@ body[data-theme='dark'] {
   --green: #34a06a;
   --green-soft: rgba(52, 160, 106, 0.08);
   --green-bord: rgba(52, 160, 106, 0.28);
-  --green-glow: rgba(52, 160, 106, 0.25);
   --gg: rgba(52, 160, 106, 0.08);
 
   --red: #d05a55;
   --red-soft: rgba(208, 90, 85, 0.08);
   --red-bord: rgba(208, 90, 85, 0.28);
-  --red-glow: rgba(208, 90, 85, 0.25);
   --rg: rgba(208, 90, 85, 0.08);
 
   --gold: #c9a35a;
@@ -96,8 +72,6 @@ body[data-theme='dark'] {
   --text3: #5a6372;
 
   --surface-1: #12151b;
-  --surface-2: #171b22;
-  --surface-3: #1b1f27;
   --line-soft: #1a1e25;
   --line-strong: #232934;
   --panel-shadow: none;
@@ -120,13 +94,11 @@ body[data-theme='light'] {
   --green: #149162;
   --green-soft: rgba(20, 145, 98, 0.12);
   --green-bord: rgba(20, 145, 98, 0.32);
-  --green-glow: rgba(20, 145, 98, 0.35);
   --gg: rgba(20, 145, 98, 0.12);
 
   --red: #d94f63;
   --red-soft: rgba(217, 79, 99, 0.11);
   --red-bord: rgba(217, 79, 99, 0.32);
-  --red-glow: rgba(217, 79, 99, 0.35);
   --rg: rgba(217, 79, 99, 0.11);
 
   --gold: #b9821e;
@@ -141,8 +113,6 @@ body[data-theme='light'] {
   --text3: #7487a2;
 
   --surface-1: rgba(255, 255, 255, 0.9);
-  --surface-2: rgba(247, 250, 254, 0.94);
-  --surface-3: rgba(237, 244, 252, 0.98);
   --line-soft: rgba(88, 117, 162, 0.18);
   --line-strong: rgba(76, 113, 172, 0.28);
   --panel-shadow: 0 20px 48px rgba(35, 58, 90, 0.1);
