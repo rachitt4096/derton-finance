@@ -5,13 +5,13 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: var(--ix-text-muted);
+  color: var(--text3);
   font-size: 11px;
   text-transform: uppercase;
 }
 
 .topbar-command strong {
-  color: var(--ix-text);
+  color: var(--text2);
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
 }
@@ -90,7 +90,7 @@
   bottom: 0;
   height: 2px;
   border-radius: 2px 2px 0 0;
-  background: var(--ix-accent);
+  background: var(--accent);
 }
 
 .terminal-left-nav {
@@ -99,7 +99,7 @@
   align-self: start;
   height: calc(100vh - 76px);
   overflow: auto;
-  border-right: 1px solid var(--ix-border);
+  border-right: 1px solid var(--border);
   background: var(--bg0);
   scrollbar-width: thin;
 }
@@ -109,7 +109,7 @@
   align-items: center;
   gap: 10px;
   padding: 14px;
-  border-bottom: 1px solid var(--ix-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .rail-mark {
@@ -117,8 +117,8 @@
   place-items: center;
   width: 34px;
   height: 34px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
   color: #dff7ff;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
@@ -133,7 +133,7 @@
 }
 
 .terminal-rail-brand strong {
-  color: var(--ix-text-strong);
+  color: var(--text);
 }
 
 .terminal-rail-brand span,
@@ -146,8 +146,8 @@
 .rail-symbol-card {
   margin: 12px;
   padding: 12px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
 }
 
 .rail-symbol-card strong {
@@ -186,14 +186,14 @@
 }
 
 .rail-nav-btn:hover {
-  border-color: var(--ix-border);
-  background: var(--ix-surface);
+  border-color: var(--border);
+  background: var(--surface-1);
   color: #edf4ff;
 }
 
 .rail-nav-btn.active {
-  border-color: var(--ix-accent);
-  background: var(--ix-accent);
+  border-color: var(--accent);
+  background: var(--accent);
   color: #ffffff;
 }
 
@@ -225,7 +225,7 @@
   justify-content: space-between;
   gap: 16px;
   padding: 14px 16px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   background: var(--bg1);
 }
 
@@ -235,18 +235,18 @@
   font-size: clamp(24px, 3vw, 38px);
   line-height: 1;
   letter-spacing: 0;
-  color: var(--ix-text-strong);
+  color: var(--text);
 }
 
 .ix-page-head p,
 .ix-panel-head p {
   margin: 6px 0 0;
-  color: var(--ix-text-muted);
+  color: var(--text3);
   font-size: 12px;
 }
 
 .ix-eyebrow {
-  color: var(--ix-accent);
+  color: var(--accent);
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   text-transform: uppercase;
@@ -262,7 +262,7 @@
 
 .ix-panel {
   min-width: 0;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   background: var(--bg1);
 }
 
@@ -272,7 +272,7 @@
   justify-content: space-between;
   gap: 12px;
   padding: 12px 14px;
-  border-bottom: 1px solid var(--ix-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .ix-panel-head h2 {
@@ -298,8 +298,8 @@
 .ix-metric {
   min-height: 76px;
   padding: 11px 12px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
 }
 
 .ix-metric span,
@@ -314,7 +314,7 @@
 .ix-metric strong {
   display: block;
   margin-top: 8px;
-  color: var(--ix-text-strong);
+  color: var(--text);
   font-family: 'JetBrains Mono', monospace;
   font-size: 18px;
 }
@@ -326,20 +326,20 @@
 }
 
 .ix-metric.tone-up strong {
-  color: var(--ix-up);
+  color: var(--green);
 }
 
 .ix-metric.tone-down strong {
-  color: var(--ix-down);
+  color: var(--red);
 }
 
 .ix-metric.tone-down strong,
 .terminal-workstation-frame .dn {
-  color: var(--ix-down);
+  color: var(--red);
 }
 
 .ix-metric.tone-warn strong {
-  color: var(--ix-warn);
+  color: var(--gold);
 }
 
 .ix-badge {
@@ -348,7 +348,7 @@
   justify-content: center;
   min-height: 22px;
   padding: 0 8px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
   color: #c9d6ec;
   background: transparent;
@@ -358,33 +358,33 @@
 }
 
 .ix-badge.tone-up {
-  border-color: var(--ix-up);
-  color: var(--ix-up);
+  border-color: var(--green);
+  color: var(--green);
   background: transparent;
 }
 
 .ix-badge.tone-down {
-  border-color: var(--ix-down);
-  color: var(--ix-down);
+  border-color: var(--red);
+  color: var(--red);
   background: transparent;
 }
 
 .ix-badge.tone-warn {
-  border-color: var(--ix-warn);
-  color: var(--ix-warn);
+  border-color: var(--gold);
+  color: var(--gold);
   background: transparent;
 }
 
 .ix-badge.tone-accent {
-  border-color: var(--ix-accent);
-  color: var(--ix-accent);
+  border-color: var(--accent);
+  color: var(--accent);
   background: transparent;
 }
 
 .ix-select-label {
   display: grid;
   gap: 5px;
-  color: var(--ix-text-muted);
+  color: var(--text3);
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -394,9 +394,9 @@
 .ix-chat-input textarea,
 .ix-setting-row select {
   min-height: 38px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #eff5ff;
   padding: 0 10px;
 }
@@ -467,7 +467,7 @@
   height: 10px;
   margin: 10px 0 8px;
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .ix-range-pin {
@@ -477,7 +477,7 @@
   height: 17px;
   border: 3px solid #fff;
   border-radius: 50%;
-  background: var(--ix-accent);
+  background: var(--accent);
   transform: translate(-50%, -50%);
 }
 
@@ -490,9 +490,9 @@
 
 .ix-return-card {
   overflow: hidden;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   text-align: center;
 }
 
@@ -527,7 +527,7 @@
 .ix-tabs span,
 .ix-segment button,
 .ix-mini-btn {
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
   background: transparent;
   color: #b9c8df;
@@ -537,13 +537,13 @@
 
 .ix-tabs .on,
 .ix-segment button.on {
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
   color: #f4f8ff;
-  background: var(--ix-accent);
+  background: var(--accent);
 }
 
 .ix-mini-btn:hover {
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
   color: #f4f8ff;
   background: transparent;
 }
@@ -565,7 +565,7 @@
   top: 0;
   z-index: 1;
   padding: 10px 9px;
-  border-bottom: 1px solid var(--ix-border);
+  border-bottom: 1px solid var(--border);
   background: #352975;
   color: #f4f1ff;
   font-size: 11px;
@@ -589,12 +589,12 @@
 }
 
 .ix-table tr:hover td {
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .ix-table .strong,
 .ix-table strong {
-  color: var(--ix-text-strong);
+  color: var(--text);
   font-weight: 700;
 }
 
@@ -642,25 +642,25 @@
   overflow: hidden;
   height: 7px;
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .ix-confidence-fill {
   display: block;
   height: 100%;
-  background: var(--ix-accent);
+  background: var(--accent);
 }
 
 .ix-confidence-fill.tone-up {
-  background: var(--ix-up);
+  background: var(--green);
 }
 
 .ix-confidence-fill.tone-warn {
-  background: var(--ix-warn);
+  background: var(--gold);
 }
 
 .ix-confidence-fill.tone-down {
-  background: var(--ix-down);
+  background: var(--red);
 }
 
 .ix-reason-stack,
@@ -677,18 +677,18 @@
   grid-template-columns: 1fr auto;
   gap: 8px 12px;
   padding: 12px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
 }
 
 .ix-arb-ticket span {
-  color: var(--ix-text-muted);
+  color: var(--text3);
 }
 
 .ix-ai-note {
   padding: 12px;
-  border-left: 2px solid var(--ix-accent);
-  background: var(--ix-surface);
+  border-left: 2px solid var(--accent);
+  background: var(--surface-1);
 }
 
 .ix-ai-note p,
@@ -709,7 +709,7 @@
 }
 
 .ix-checklist span.ok {
-  color: var(--ix-up);
+  color: var(--green);
 }
 
 .ix-chat-stream {
@@ -724,14 +724,14 @@
 .ix-message {
   max-width: 78%;
   padding: 11px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
 }
 
 .ix-message.user {
   margin-left: auto;
-  background: var(--ix-surface);
-  border-color: var(--ix-accent);
+  background: var(--surface-1);
+  border-color: var(--accent);
 }
 
 .ix-message-meta,
@@ -753,20 +753,20 @@
   grid-template-columns: 1fr auto auto;
   gap: 8px;
   padding: 12px;
-  border-top: 1px solid var(--ix-border);
+  border-top: 1px solid var(--border);
 }
 
 .ix-chat-input textarea {
   min-height: 62px;
   padding: 10px;
   resize: vertical;
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .ix-chat-input button,
 .ix-command-list button,
 .port-entry-submit {
-  border: 1px solid var(--ix-accent);
+  border: 1px solid var(--accent);
   border-radius: 3px;
   background: transparent;
   color: #eff8ff;
@@ -778,7 +778,7 @@
 }
 
 .ix-voice-btn.listening {
-  border-color: var(--ix-warn);
+  border-color: var(--gold);
   background: transparent;
   color: #ffe0a3;
 }
@@ -797,7 +797,7 @@
 .ix-empty {
   margin: 12px;
   padding: 12px;
-  border: 1px dashed var(--ix-border);
+  border: 1px dashed var(--border);
   color: #91a0ba;
 }
 
@@ -846,19 +846,19 @@
   align-items: center;
   gap: 10px;
   padding: 12px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
 }
 
 .ix-model-pill span {
-  color: var(--ix-accent);
+  color: var(--accent);
   font-family: 'JetBrains Mono', monospace;
 }
 
 .ix-event {
   padding: 10px;
-  border: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
 }
 
 .ix-event div {
@@ -917,7 +917,7 @@
     top: auto;
     height: auto;
     border-right: 0;
-    border-bottom: 1px solid var(--ix-border);
+    border-bottom: 1px solid var(--border);
   }
 
   .terminal-top-nav {
@@ -986,9 +986,9 @@
   display: inline-flex;
   gap: 2px;
   padding: 3px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .opt-pill {
@@ -1009,15 +1009,15 @@
 }
 
 .opt-pill.active {
-  background: var(--ix-accent);
+  background: var(--accent);
   color: #ffffff;
 }
 
 .opt-expiry-select {
   padding: 7px 12px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #e7f0ff;
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
@@ -1052,8 +1052,8 @@
   padding: 7px 0;
   font-size: 11px;
   letter-spacing: 0.12em;
-  background: var(--ix-surface);
-  border-bottom: 1px solid var(--ix-border);
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--border);
 }
 
 .opt-side-head .call-head {
@@ -1063,7 +1063,7 @@
 }
 
 .opt-side-head .put-head {
-  color: var(--ix-up);
+  color: var(--green);
   text-align: left;
   padding-left: 16px;
 }
@@ -1081,7 +1081,7 @@
   text-transform: uppercase;
   text-align: right;
   background: var(--bg0);
-  border-bottom: 1px solid var(--ix-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .opt-col-head .strike-col {
@@ -1098,12 +1098,12 @@
 }
 
 .opt-row:hover td {
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 /* In-the-money cells get a subtle neutral tint */
 .opt-row td.itm {
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .opt-row .c-oi,
@@ -1126,19 +1126,19 @@
   text-align: center !important;
   font-weight: 700;
   color: #e9f0ff !important;
-  background: var(--ix-surface);
-  border-left: 1px solid var(--ix-border);
-  border-right: 1px solid var(--ix-border);
+  background: var(--surface-1);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
 }
 
 .opt-row.atm td {
-  background: var(--ix-surface);
-  border-top: 1px solid var(--ix-accent);
-  border-bottom: 1px solid var(--ix-accent);
+  background: var(--surface-1);
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
 }
 
 .opt-row.atm .strike-col {
-  background: var(--ix-accent);
+  background: var(--accent);
   color: #ffffff !important;
 }
 
@@ -1169,9 +1169,9 @@
   width: 38px;
   height: 38px;
   margin: 12px 0 6px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #dff7ff;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
@@ -1203,14 +1203,14 @@
 
 .rail-icon-btn:hover {
   color: #edf4ff;
-  background: var(--ix-surface);
-  border-color: var(--ix-border);
+  background: var(--surface-1);
+  border-color: var(--border);
 }
 
 .rail-icon-btn.active {
   color: #ffffff;
-  background: var(--ix-accent);
-  border-color: var(--ix-accent);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .rail-icon-btn svg {
@@ -1224,9 +1224,9 @@
   top: 50%;
   transform: translateY(-50%) translateX(-4px);
   padding: 5px 10px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #e7f0ff;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
@@ -1247,9 +1247,9 @@
   transform: translateY(-50%) rotate(45deg);
   width: 7px;
   height: 7px;
-  background: var(--ix-surface);
-  border-left: 1px solid var(--ix-border);
-  border-bottom: 1px solid var(--ix-border);
+  background: var(--surface-1);
+  border-left: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .rail-icon-btn:hover .rail-icon-tip {
@@ -1295,9 +1295,9 @@
 .hist-symbol-input,
 .hist-date-input {
   padding: 7px 11px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #e7f0ff;
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
@@ -1311,7 +1311,7 @@
 .hist-symbol-input:focus,
 .hist-date-input:focus {
   outline: none;
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
 }
 
 .hist-date-input::-webkit-calendar-picker-indicator {
@@ -1323,9 +1323,9 @@
   display: inline-flex;
   gap: 2px;
   padding: 3px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .hist-quick-row {
@@ -1362,9 +1362,9 @@
   place-items: center;
   width: 54px;
   height: 54px;
-  border: 1px solid var(--ix-accent);
+  border: 1px solid var(--accent);
   border-radius: 50%;
-  background: var(--ix-accent);
+  background: var(--accent);
   color: #eaf7ff;
   cursor: pointer;
   transition: transform 0.15s ease;
@@ -1375,7 +1375,7 @@
 }
 
 .assistant-fab.open {
-  background: var(--ix-surface);
+  background: var(--surface-1);
 }
 
 .assistant-panel {
@@ -1387,7 +1387,7 @@
   flex-direction: column;
   width: min(400px, calc(100vw - 36px));
   height: min(560px, calc(100vh - 130px));
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
   overflow: hidden;
   background: var(--bg1);
@@ -1404,8 +1404,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 14px;
-  border-bottom: 1px solid var(--ix-border);
-  background: var(--ix-surface);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-1);
   cursor: move;
   user-select: none;
 }
@@ -1462,7 +1462,7 @@
 .assistant-suggestions button {
   text-align: left;
   padding: 9px 11px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
   background: transparent;
   color: #cdd9ef;
@@ -1472,7 +1472,7 @@
 }
 
 .assistant-suggestions button:hover {
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
   background: transparent;
   color: #fff;
 }
@@ -1489,21 +1489,21 @@
 
 .assistant-msg.user {
   align-self: flex-end;
-  background: var(--ix-accent);
+  background: var(--accent);
   color: #eaf7ff;
   border-bottom-right-radius: 3px;
 }
 
 .assistant-msg.assistant {
   align-self: flex-start;
-  background: var(--ix-surface);
-  border: 1px solid var(--ix-border);
+  background: var(--surface-1);
+  border: 1px solid var(--border);
   color: #dce7f7;
   border-bottom-left-radius: 3px;
 }
 
 .assistant-msg.error {
-  border-color: var(--ix-down);
+  border-color: var(--red);
   color: #ffb4c1;
 }
 
@@ -1521,7 +1521,7 @@
 
 .assistant-disabled {
   padding: 12px;
-  border: 1px solid var(--ix-warn);
+  border: 1px solid var(--gold);
   border-radius: 3px;
   background: transparent;
   color: #ffd79a;
@@ -1538,27 +1538,27 @@
   display: flex;
   gap: 8px;
   padding: 12px;
-  border-top: 1px solid var(--ix-border);
+  border-top: 1px solid var(--border);
 }
 
 .assistant-input input {
   flex: 1;
   padding: 9px 12px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #e7f0ff;
   font-size: 13px;
 }
 
 .assistant-input input:focus {
   outline: none;
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
 }
 
 .assistant-input button {
   padding: 0 16px;
-  border: 1px solid var(--ix-accent);
+  border: 1px solid var(--accent);
   border-radius: 3px;
   background: transparent;
   color: #eaf7ff;
@@ -1603,9 +1603,9 @@
 .alert-form select,
 .alert-form input {
   padding: 9px 11px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #e7f0ff;
   font-size: 13px;
 }
@@ -1613,13 +1613,13 @@
 .alert-form select:focus,
 .alert-form input:focus {
   outline: none;
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
 }
 
 .alert-create-btn {
   margin-top: 4px;
   padding: 10px;
-  border: 1px solid var(--ix-accent);
+  border: 1px solid var(--accent);
   border-radius: 3px;
   background: transparent;
   color: #eaf7ff;
@@ -1638,7 +1638,7 @@
 }
 
 .ix-mini-btn.danger {
-  border-color: var(--ix-down);
+  border-color: var(--red);
   color: #ff9db1;
 }
 
@@ -1663,9 +1663,9 @@
   min-width: 30px;
   height: 26px;
   padding: 0 7px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #cdd9ef;
   font-size: 11px;
   font-weight: 600;
@@ -1673,7 +1673,7 @@
 }
 
 .assistant-lang.hi {
-  border-color: var(--ix-warn);
+  border-color: var(--gold);
   color: #ffd79a;
 }
 
@@ -1682,15 +1682,15 @@
   place-items: center;
   width: 28px;
   height: 26px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   color: #9aa9c2;
   cursor: pointer;
 }
 
 .assistant-icon-btn.on {
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
   color: #80d7ff;
   background: transparent;
 }
@@ -1699,7 +1699,7 @@
   display: grid;
   place-items: center;
   width: 40px;
-  border: 1px solid var(--ix-accent);
+  border: 1px solid var(--accent);
   border-radius: 3px;
   background: transparent;
   color: #80d7ff;
@@ -1709,12 +1709,12 @@
 
 .assistant-mic:hover {
   color: #fff;
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
 }
 
 .assistant-mic.listening {
-  border-color: var(--ix-down);
-  color: var(--ix-down);
+  border-color: var(--red);
+  color: var(--red);
   background: transparent;
 }
 
@@ -1728,21 +1728,21 @@
 .comm-card {
   text-align: left;
   padding: 12px 14px;
-  border: 1px solid var(--ix-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: var(--ix-surface);
+  background: var(--surface-1);
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .comm-card:hover {
-  border-color: var(--ix-accent);
+  border-color: var(--accent);
   background: transparent;
 }
 
 .comm-card.active {
-  border-color: var(--ix-accent);
-  background: var(--ix-accent);
+  border-color: var(--accent);
+  background: var(--accent);
 }
 
 .comm-card-head {
@@ -1766,7 +1766,7 @@
 
 .comm-card-price {
   margin-top: 8px;
-  color: var(--ix-text-strong);
+  color: var(--text);
   font-family: 'JetBrains Mono', monospace;
   font-size: 19px;
 }

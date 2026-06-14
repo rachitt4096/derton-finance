@@ -243,7 +243,7 @@ body[data-theme='dark'] .chart-legend {
   border-color: rgba(125, 158, 227, 0.28);
   background: var(--bg2);
   border-radius: 3px;
-  color: var(--ix-text);
+  color: var(--text2);
   transition:
     transform 0.18s ease,
     border-color 0.18s ease,
