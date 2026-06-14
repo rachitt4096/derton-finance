@@ -96,17 +96,6 @@
   padding: 18px;
 }
 
-.s2-rich-title,
-.hist-title,
-.sc-sb-title,
-.book-title,
-.fw-side-title {
-  color: var(--text);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
 .insight-description,
 .hist-sub,
 .insight-subtle,

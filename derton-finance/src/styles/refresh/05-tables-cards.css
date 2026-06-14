@@ -1,46 +1,7 @@
-.insight-table-wrap,
-.hist-table-wrap,
-.sc-table-wrap,
-.port-table-wrap,
-.book-table-wrap,
-.ow-table-wrap,
-.fw-table-wrap {
-  overflow: auto;
-}
-
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-}
-
-:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) thead th {
-  padding: 12px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--text3);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody td {
-  padding: 12px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
-  color: var(--text2);
-  font-size: 13px;
-}
-
-:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody tr:hover td {
-  background: rgba(87, 199, 255, 0.06);
-  color: var(--text);
-}
-
-:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody tr:last-child td {
-  border-bottom: 0;
 }
 
 .sc-filter-bar {
@@ -52,12 +13,6 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
-}
-
-.sc-sidebar,
-.port-side,
-.fw-side {
-  padding: 18px 18px 16px;
 }
 
 .sc-wl-item,
@@ -82,15 +37,6 @@
   border: 1px solid var(--border);
   border-radius: var(--rd-sm);
   background: var(--bg2);
-}
-
-.sc-sum-l,
-.pc-l {
-  color: var(--text3);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 .port-top {

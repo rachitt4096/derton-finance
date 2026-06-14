@@ -220,15 +220,6 @@
     padding: 6px 9px;
   }
 
-  #indexbar,
-  .port-top,
-  .sc-summary,
-  .fw-summary-bar,
-  .s2-stats,
-  .s2-bottom {
-    grid-template-columns: 1fr;
-  }
-
   .chart-hint {
     white-space: normal;
   }
@@ -554,16 +545,6 @@
 
 .insight-book-row {
   padding-block: 6px;
-}
-
-:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) thead th {
-  padding: 10px 12px;
-  font-size: 9px;
-}
-
-:is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody td {
-  padding: 10px 12px;
-  font-size: 12px;
 }
 
 .sc-filter-bar {

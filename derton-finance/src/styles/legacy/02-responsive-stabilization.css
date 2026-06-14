@@ -98,19 +98,6 @@
     overflow: visible;
   }
 
-  .wl-sidebar,
-  .info-panel,
-  .info-panel.info-panel-market,
-  .sc-sidebar,
-  .port-side,
-  .fw-side {
-    width: 100% !important;
-    max-width: none;
-    border-left: 0 !important;
-    border-right: 0 !important;
-    border-top: 1px solid var(--border);
-  }
-
   .chart-area {
     min-width: 0;
   }

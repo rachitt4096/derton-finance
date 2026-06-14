@@ -1,0 +1,30 @@
+/* ── P7: Sidebar padding ───────────────────────────────────────── */
+.sc-sidebar,
+.port-side,
+.fw-side {
+  padding: 18px 18px 16px;
+}
+
+/* ── P9: Overflow hidden group ─────────────────────────────────── */
+.wl-sidebar,
+.graph-shell,
+.graph-meta,
+.stock-hdr,
+.sc-table-wrap,
+.ow-table-wrap,
+.fw-table-wrap,
+.port-table-wrap,
+.book-table-wrap,
+.hist-section {
+  overflow: hidden;
+}
+
+/* ── P8: Body gap ──────────────────────────────────────────────── */
+.s1-body,
+.sc-body,
+.port-body,
+.fw-body,
+.ow-body,
+.s2-body {
+  gap: 10px;
+}

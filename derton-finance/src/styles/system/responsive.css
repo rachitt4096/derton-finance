@@ -1,0 +1,27 @@
+/* ── P22: Responsive grid 1-col ≤899px ─────────────────────────── */
+@media (max-width: 899px) {
+  #indexbar,
+  .port-top,
+  .sc-summary,
+  .fw-summary-bar,
+  .s2-stats,
+  .s2-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── P23: Mobile sidebar full-width ≤1365px ────────────────────── */
+@media (max-width: 1365px) {
+  .wl-sidebar,
+  .info-panel,
+  .info-panel.info-panel-market,
+  .sc-sidebar,
+  .port-side,
+  .fw-side {
+    width: 100% !important;
+    max-width: none;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 1px solid var(--border);
+  }
+}

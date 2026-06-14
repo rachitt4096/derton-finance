@@ -1,0 +1,21 @@
+/* ── P10: Cross-component title ─────────────────────────────────── */
+.s2-rich-title,
+.hist-title,
+.sc-sb-title,
+.book-title,
+.fw-side-title {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ── P11: Cross-component label ─────────────────────────────────── */
+.sc-sum-l,
+.pc-l {
+  color: var(--text3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

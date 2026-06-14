@@ -1,0 +1,38 @@
+/* ── P17: Universal box-sizing ──────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ── P18: HTML responsive font-size ────────────────────────────── */
+html {
+  font-size: clamp(14px, 0.6vw + 8px, 19px);
+}
+
+/* ── P19: Root sizing (overflow:hidden kept in base.css) ───────── */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
+/* ── P20: Body base ────────────────────────────────────────────── */
+body {
+  min-width: 0;
+  overscroll-behavior: none;
+  background: var(--bg0);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+/* ── P21: Media max-width ──────────────────────────────────────── */
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}

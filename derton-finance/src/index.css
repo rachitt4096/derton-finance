@@ -9,6 +9,14 @@
 @import './styles/login.css';
 @import './styles/refresh.css';
 
+/* System design patterns extracted from multi-purpose files. */
+@import './styles/system/base.css';
+@import './styles/system/tables.css';
+@import './styles/system/layout-base.css';
+@import './styles/system/typography.css';
+@import './styles/system/responsive.css';
+@import './styles/system/surfaces.css';
+
 /* Late-stage layout and workstation overrides. */
 @import './styles/compatibility.css';
 @import './styles/institutional-terminal.css';

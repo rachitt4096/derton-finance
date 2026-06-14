@@ -314,19 +314,6 @@ table {
   border-collapse: collapse;
 }
 
-:is(
-  .sc-table, .ow-table, .holdings-table, .txn-table,
-  .insight-table, .hist-table, .ptable, .fw-table, .book-table
-) th,
-:is(
-  .sc-table, .ow-table, .holdings-table, .txn-table,
-  .insight-table, .hist-table, .ptable, .fw-table, .book-table
-) td {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 220px;
-}
 
 
 /* ── 8. Panels — always obey parent ─────────────────────────────────── */

@@ -374,25 +374,6 @@ body[data-theme='dark'] .market-pill {
   box-shadow: none;
 }
 
-.wl-sidebar,
-.graph-shell,
-.graph-meta,
-.stock-hdr,
-.sc-table-wrap,
-.ow-table-wrap,
-.fw-table-wrap,
-.port-table-wrap,
-.book-table-wrap,
-.hist-section {
-  overflow: hidden;
-}
 
-.s1-body,
-.sc-body,
-.port-body,
-.fw-body,
-.ow-body,
-.s2-body {
-  gap: 10px;
-}
+
 
