@@ -1,0 +1,116 @@
+// Upstox WebSocket V3 — MarketDataFeedResponse protobuf definition.
+// Source: https://github.com/upstox/upstox-python (public SDK proto)
+//
+// Compile:
+//   pip install grpcio-tools
+//   python -m grpc_tools.protoc \
+//       -I services/ingestion \
+//       --python_out=services/ingestion \
+//       services/ingestion/MarketDataFeed.proto
+//
+// Or run:  bash scripts/gen_proto.sh
+
+syntax = "proto3";
+package com.upstox.marketdatafeeder.rpc.proto;
+
+enum FeedType {
+  UNSPECIFIED = 0;
+  INITIAL_FEED = 1;
+  LIVE_FEED = 2;
+  DISCONNECTED = 3;
+}
+
+message MarketDataFeedResponse {
+  map<string, Feed> feeds = 1;
+  FeedType type = 2;
+}
+
+message Feed {
+  LTPC ltpc = 1;
+  MarketFF ff = 2;
+  OptionGreeks og = 3;
+}
+
+// Last traded price + change data — present in every tick.
+message LTPC {
+  double ltp = 1;   // last traded price
+  double ltt = 2;   // last traded time (epoch ms)
+  double ltq = 3;   // last traded quantity
+  double cp  = 4;   // previous close (for pct-change)
+}
+
+// Full-feed extras (present when mode = "full").
+message MarketFF {
+  MarketOHLC marketOHLC = 1;
+  AtBidAsk eFeedDetails = 2;
+  ExtendedFeedDetails eFeedDetails2 = 3;
+}
+
+message MarketOHLC {
+  repeated OHLCV ohlc = 1;
+}
+
+message OHLCV {
+  string interval = 1;  // "1d", "1w", etc.
+  double open     = 2;
+  double high     = 3;
+  double low      = 4;
+  double close    = 5;
+  int64  volume   = 6;
+  int64  ts       = 7;  // bar open timestamp (epoch ms)
+}
+
+// Top-of-book depth.
+message AtBidAsk {
+  repeated Depth bp  = 1;  // bid prices/quantities
+  repeated Depth sp  = 2;  // ask prices/quantities
+  int64 ltq          = 3;
+  int64 cp           = 4;
+  int64 ltt          = 5;
+  int64 bq           = 6;
+  int64 sq           = 7;
+}
+
+// 5-level depth (extended feed details).
+message ExtendedFeedDetails {
+  repeated Depth bidAsk = 1;
+  double atp   = 2;   // average traded price
+  double cp    = 3;   // close price
+  int64  vtt   = 4;   // volume traded today
+  int64  oi    = 5;   // open interest
+  int64  poi   = 6;   // previous OI
+  double tPrice = 7;
+  double lClose = 8;
+  repeated BuyLevel  buyLevel  = 9;
+  repeated SellLevel sellLevel = 10;
+}
+
+message Depth {
+  double price    = 1;
+  int64  quantity = 2;
+  int64  orders   = 3;
+}
+
+message BuyLevel {
+  int32  level    = 1;
+  double price    = 2;
+  int64  quantity = 3;
+  int64  orders   = 4;
+}
+
+message SellLevel {
+  int32  level    = 1;
+  double price    = 2;
+  int64  quantity = 3;
+  int64  orders   = 4;
+}
+
+message OptionGreeks {
+  double op    = 1;   // option price
+  double up    = 2;   // underlying price
+  double iv    = 3;   // implied volatility
+  double delta = 4;
+  double theta = 5;
+  double gamma = 6;
+  double vega  = 7;
+}

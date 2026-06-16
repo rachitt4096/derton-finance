@@ -15,7 +15,7 @@
 .pc-l {
   color: var(--text3);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: var(--fs-xs);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }

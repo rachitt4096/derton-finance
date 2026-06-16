@@ -9,7 +9,7 @@
 .sc-sidebar,
 .port-side,
 .fw-side {
-  padding: 12px 12px 10px;
+  padding: var(--sp-3) var(--sp-3) var(--sp-2p5);
 }
 
 /* ── P9: Overflow hidden group ─────────────────────────────────── */
@@ -32,5 +32,5 @@
 .port-body,
 .fw-body,
 .s2-body {
-  gap: 10px;
+  gap: var(--sp-2p5);
 }

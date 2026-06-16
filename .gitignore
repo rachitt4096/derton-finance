@@ -1,1 +1,6 @@
 node_modules/
+
+# Secrets — never commit
+.env
+Server/.env
+**/.env

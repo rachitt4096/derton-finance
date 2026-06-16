@@ -95,7 +95,7 @@
 
 #s5 .ow-symbol-cell span {
   color: var(--screen-symbol);
-  font-size: 12px;
+  font-size: var(--fs-base);
   letter-spacing: 0.05em;
 }
 
@@ -133,14 +133,14 @@
 }
 
 #s5 .ow-detail-grid {
-  gap: 10px;
-  padding: 10px 4px;
+  gap: var(--sp-2p5);
+  padding: var(--sp-2p5) var(--sp-1);
 }
 
 #s5 .ow-detail-grid > div {
   border: 1px solid var(--border);
   border-radius: var(--rd-sm);
-  padding: 10px 12px;
+  padding: var(--sp-2p5) var(--sp-3);
   background: var(--screen-card-bg);
   box-shadow: var(--screen-inset);
 }

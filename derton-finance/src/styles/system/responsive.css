@@ -20,8 +20,8 @@
   .fw-side {
     width: 100% !important;
     max-width: none;
-    border-left: 0 !important;
-    border-right: 0 !important;
+    border-left: 0;
+    border-right: 0;
     border-top: 1px solid var(--border);
   }
 }

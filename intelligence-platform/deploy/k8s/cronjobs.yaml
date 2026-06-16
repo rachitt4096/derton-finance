@@ -1,0 +1,53 @@
+# Batch clock as native K8s CronJobs (alternative to Celery beat for heavy jobs).
+apiVersion: batch/v1
+kind: CronJob
+metadata: { name: nightly-retrain, namespace: derton-intel }
+spec:
+  schedule: "0 18 * * *"          # 18:00 UTC nightly
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: retrain
+              image: registry/derton-intel-worker:latest
+              command: ["python", "-m", "services.training.train_xgb",
+                        "$(START)", "$(END)", "$(VERSION)"]
+              envFrom: [{ secretRef: { name: derton-secrets } }]
+              resources:
+                requests: { cpu: "4", memory: 8Gi }
+                limits:   { cpu: "8", memory: 16Gi }
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata: { name: drift-monitor, namespace: derton-intel }
+spec:
+  schedule: "0 19 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: drift
+              image: registry/derton-intel-worker:latest
+              command: ["python", "-c",
+                        "import asyncio;from services.monitoring.drift import run_monitor;asyncio.run(run_monitor())"]
+              envFrom: [{ secretRef: { name: derton-secrets } }]
+---
+apiVersion: batch/v1
+kind: Job
+metadata: { name: ch-migrate, namespace: derton-intel }
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: migrate
+          image: registry/derton-intel-worker:latest
+          command: ["python", "clickhouse/migrations/run_migrations.py"]
+          envFrom: [{ secretRef: { name: derton-secrets } }]

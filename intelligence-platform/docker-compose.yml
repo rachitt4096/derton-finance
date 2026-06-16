@@ -1,0 +1,95 @@
+# Local full stack. `docker compose up -d` then `python clickhouse/migrations/run_migrations.py`.
+name: derton-intel
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8
+    ports: ["8123:8123", "9000:9000"]
+    ulimits: { nofile: { soft: 262144, hard: 262144 } }
+    volumes:
+      - ch_data:/var/lib/clickhouse
+    environment:
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "localhost:8123/ping"]
+      interval: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "4gb",
+              "--maxmemory-policy", "allkeys-lru"]
+    ports: ["6379:6379"]
+    volumes: ["redis_data:/data"]
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    ports: ["9000:9000", "9001:9001"]
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes: ["minio_data:/data"]
+
+  api:
+    build: { context: ., dockerfile: deploy/docker/api.Dockerfile }
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8080
+    ports: ["8080:8080"]
+    env_file: .env
+    depends_on: [clickhouse, redis]
+
+  ingestion:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: python -m services.ingestion.ws_client
+    env_file: .env
+    depends_on: [clickhouse, redis]
+
+  candles:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: python -m services.candles.builder
+    env_file: .env
+    depends_on: [redis]
+    deploy: { replicas: 2 }
+
+  features:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: python -m services.features.engine
+    env_file: .env
+    depends_on: [redis, clickhouse]
+    deploy: { replicas: 2 }
+
+  inference:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: python -m services.inference.predictor
+    env_file: .env
+    depends_on: [redis, clickhouse, minio]
+    deploy: { replicas: 2 }
+
+  regime:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: python -m services.regime.classifier
+    env_file: .env
+    depends_on: [redis, clickhouse]
+
+  scanner:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: python -m services.scanner.engine
+    env_file: .env
+    depends_on: [redis]
+
+  celery-worker:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: celery -A workers.celery_app worker -Q realtime,batch,training -c 4
+    env_file: .env
+    depends_on: [redis, clickhouse]
+
+  celery-beat:
+    build: { context: ., dockerfile: deploy/docker/worker.Dockerfile }
+    command: celery -A workers.celery_app beat
+    env_file: .env
+    depends_on: [redis]
+
+volumes:
+  ch_data:
+  redis_data:
+  minio_data:

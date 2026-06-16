@@ -24,12 +24,12 @@ table {
 
 /* ── P3: Table thead th ────────────────────────────────────────── */
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) thead th {
-  padding: 12px 14px;
+  padding: var(--sp-3) var(--sp-3p5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.03);
   color: var(--text3);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: var(--fs-xs);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -38,10 +38,10 @@ table {
 
 /* ── P4: Table tbody td ────────────────────────────────────────── */
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody td {
-  padding: 12px 14px;
+  padding: var(--sp-3) var(--sp-3p5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.045);
   color: var(--text2);
-  font-size: 13px;
+  font-size: var(--fs-md);
 }
 
 /* ── P5: Table hover + last-child ──────────────────────────────── */
@@ -56,13 +56,13 @@ table {
 
 /* ── P13: Compact table cell overrides ─────────────────────────── */
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) thead th {
-  padding: 10px 12px;
-  font-size: 9px;
+  padding: var(--sp-2p5) var(--sp-3);
+  font-size: var(--fs-micro);
 }
 
 :is(.insight-table, .hist-table, .sc-table, .ptable, .ow-table, .fw-table) tbody td {
-  padding: 10px 12px;
-  font-size: 12px;
+  padding: var(--sp-2p5) var(--sp-3);
+  font-size: var(--fs-base);
 }
 
 /* ── P12: Cell text truncation ─────────────────────────────────── */
